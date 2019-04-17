@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{centernot}
+\usepackage{hyperref}
+\usepackage{eufrak}
+\usepackage{graphicx}
+\graphicspath{{pics/}}
+\geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Anthony Catterwell}
+\chead{\textsc{University of Edinburgh}}
+\rhead{Analysis}
+
+\title{Honours Analysis Notes}
+\author{Anthony Catterwell}
+
+\pagenumbering{gobble}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\break{}
+
+\section{The Real Number System}
+
+\subsection{Introduction}
+
+\subsection{Ordered Field Axioms}
+
+\begin{itemize}
+    \item \textbf{Postulate 1} \emph{Field Axioms} \\
+        There are functions $+$ and $\cdot$ defined on
+        $\mathbb{R}^2 := \mathbb{R} \times \mathbb{R}$,
+        which satisfy the following properties $\forall a, b, c \in \mathbb{R}$
+
+        \begin{itemize}
+            \item \emph{Closure Properties}:
+                $a + b, \ a \cdot b \in \mathbb{R}$
+
+            \item \emph{Associative Properties}:
+                $a + (b + c) = (a + b) + c$ and
+                $a \cdot (b \cdot c) = (a \cdot b) \cdot c$
+
+            \item \emph{Commutative Properties}:
+                $a + b = b + a$ and $a \cdot b = b \cdot a$
+
+            \item \emph{Distributive Law}:
+                $a \cdot (b + c) = a \cdot b + a \cdot c$
+
+            \item \emph{Existence of Additive Identity}:
+                There is a unique element $0 \in \mathbb{R}$ such that
+                $0 + a = a$ for all $a \in \mathbb{R}$
+
+            \item \emph{Existence of Multiplicative Identity}:
+                There is a unique element $1 \in \mathbb{R}$ such that
+                $1 \neq 0$ and $1 \cdot a = a$ for all $a \in \mathbb{R}$
+
+            \item \emph{Existence of Additive Inverses}:
+                For every $x \in \mathbb{R}$ there is a unique element $-x \in \mathbb{R}$ such that
+                \[
+                    x + (-x) = 0
+                \]
+
+            \item \emph{Existence of Multiplicative Inverses}:
+                For every $x \in \mathbb{R} \setminus \{0\}$ there is a unique element
+                $x^{-1} \in \mathbb{R}$ such that
+                \[
+                    x \cdot (x^{-1}) = 1
+                \]
+        \end{itemize}
+
+    \item \textbf{Postulate 2} \emph{Order Axioms} \\
+        There is a relation $<$ on $\mathbb{R} \times \mathbb{R}$ that has the following
+        properties:
+        \begin{itemize}
+            \item \emph{Trichotomy Property}
+                Given $a, b \in \mathbb{R}$, one and only one of the following statements hold:
+                \[
+                    a < b, \ b < a, \ \text{or} \ a = b
+                \]
+
+            \item \emph{Transitive property}
+                For $a, b, c, \in \mathbb{R}$
+                \[
+                    a < b \ \text{and} \b < c \implies a < c
+                \]
+        \end{itemize}<++>
+
+\end{itemize}
+
+\end{document}
