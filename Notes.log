@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  17 APR 2019 23:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  18 APR 2019 00:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -458,32 +458,166 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.432 \end{document}
-                     [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+l.432 \break
+            {} [6]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 434.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 434.
+
+./Notes.tex:452: Double subscript.
+l.452 ...hall mean a sequence of the form ${\{x_n_
+                                                  k\}}_{k \in \mathbb{N}}$,
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:457: Double subscript.
+l.457         ${ \{x_n_
+                       k\} }{k \in \mathbb{N}}$ is any subsequence of
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:458: Double subscript.
+l.458 ...\{x_n\} }_{n \in \mathbb{N}}$, then $x_n_
+                                                  k$ converges to $a$ as $k ...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.519                 \[
+                         [7]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.604             \item $
+                         \{x_n\}$ is said to be \emph{increasing} [8]
+
+./Notes.tex:647: LaTeX Error: \mathbb allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.647 ...$ is said to be \emph{Cauchy} (in \mathbb
+                                                  {R})
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Notes.tex:683: Double subscript.
+l.683         Then there are subsequences ${\{x_n_
+                                                  k\}}_{k \in \mathbb{N}}$ and
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:684: Undefined control sequence.
+l.684         ${\{x_\el
+                       _j\}}_{j \in \mathbb{N}}$ such that
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:684: Missing { inserted.
+<to be read again> 
+                   _
+l.684         ${\{x_\el_
+                        j\}}_{j \in \mathbb{N}}$ such that
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./Notes.tex:684: Double subscript.
+l.684         ${\{x_\el_j\}}_
+                             {j \in \mathbb{N}}$ such that
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:684: Missing } inserted.
+<inserted text> 
+                }
+l.684         ${\{x_\el_j\}}_{j \in \mathbb{N}}$
+                                                 such that
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Notes.tex:685: Double subscript.
+l.685         $x_n_
+                   k \to s$ as $k \to \infty$ and $x_\el_j \to t$ as $j \to ...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:685: Undefined control sequence.
+l.685 ...x_n_k \to s$ as $k \to \infty$ and $x_\el
+                                                  _j \to t$ as $j \to \infty$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:685: Missing { inserted.
+<to be read again> 
+                   _
+l.685 ..._n_k \to s$ as $k \to \infty$ and $x_\el_
+                                                  j \to t$ as $j \to \infty$.
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./Notes.tex:685: Missing } inserted.
+<inserted text> 
+                }
+l.685 ... s$ as $k \to \infty$ and $x_\el_j \to t$
+                                                   as $j \to \infty$.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.690         \[
+                 [9]
+./Notes.tex:699: Double subscript.
+l.699         Namely, if $x_n_
+                              k \to x$ as $k \to \infty$, then
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.724 \end{document}
+                     [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
  (./Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 724.
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 4D401275447A9AE2F5563368ED23AC33;481.
+(rerunfilecheck)             Checksum: 13258C8847653ED424B10537C6674E56;882.
  ) 
 Here is how much of TeX's memory you used:
- 7126 strings out of 492616
- 100312 string characters out of 6135178
- 207234 words of memory out of 5000000
- 10876 multiletter control sequences out of 15000+600000
- 11999 words of font info for 45 fonts, out of 8000000 for 9000
+ 7166 strings out of 492616
+ 100747 string characters out of 6135178
+ 207237 words of memory out of 5000000
+ 10892 multiletter control sequences out of 15000+600000
+ 14300 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,43p,813b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (6 pages, 176380 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Notes.pdf (10 pages, 202576 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
