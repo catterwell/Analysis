@@ -84,18 +84,348 @@
         There is a relation $<$ on $\mathbb{R} \times \mathbb{R}$ that has the following
         properties:
         \begin{itemize}
-            \item \emph{Trichotomy Property}
+            \item \emph{Trichotomy Property}:
                 Given $a, b \in \mathbb{R}$, one and only one of the following statements hold:
                 \[
                     a < b, \ b < a, \ \text{or} \ a = b
                 \]
 
-            \item \emph{Transitive property}
+            \item \emph{Transitive Property}:
                 For $a, b, c, \in \mathbb{R}$
                 \[
                     a < b \ \text{and} \b < c \implies a < c
                 \]
-        \end{itemize}<++>
+
+            \item \emph{Additive Property}:
+                For $a, b, c \in \mathbb{R}$
+                \[
+                    a < b \ \text{and} \ c \in \mathbb{R} \implies a + c < b + c
+                \]
+
+            \item \emph{Multiplicative Properties}:
+                For $a, b, c, \in \mathbb{R}$
+                \[
+                    a < b \ \text{and} \ c > 0 \implies ac < bc
+                \]
+                and
+                \[
+                    a < b \ \text{and} \ c < 0 \implies bc < ac
+                \]
+        \end{itemize}
+
+    \item \textbf{Remark 1.1} \\
+        We will assume that the sets $\mathbb{N}$ and $\mathbb{Z}$ satisfy the following properties:
+        \begin{enumerate}
+            \item If $n, m \in \mathbb{Z}$, then $n + m, n - m$ and $mn$ belong to $\mathbb{Z}$
+            \item If $n \in \mathbb{Z}$, then $n \in \mathbb{N}$ if and only if $n \geq 1$
+            \item There is no $n \in \mathbb{Z}$ that satisfies $0 < n < 1$
+        \end{enumerate}
+
+    \item \textbf{Definition 1.4} \emph{Absolute Value} \\
+        The \emph{absolute value} of a number $a \in \mathbb{R}$ is the number
+        \[
+            |a| :=
+            \begin{cases}{}
+                a  & a \geq 0 \\
+                -a & a < 0 \\
+            \end{cases}
+        \]
+
+    \item \textbf{Remark 1.5} The \emph{absolute value} is multiplicative;
+        that is, $|ab| = |a||b| \ \forall a, b, \in \mathbb{R}$
+
+    \item \textbf{Theorem 1.6} \emph{Fundamental Theorem of Absolute Values} \\
+        Let $a \in \mathbb{R}$ and $M \geq 0$.
+        Then $|a| \leq M \iff -M \leq a \leq M$.
+
+    \item \textbf{Theorem 1.7} The absolute value satisfies the following three properties:
+        \begin{enumerate}
+            \item \emph{Positive Definite}:
+                For all $a \in \mathbb{R}$, $|a| > 0$ with $|a| = 0$ if and only if $a = 0$.
+            \item \emph{Symmetric}:
+                For all $a, b, \in \mathbb{R}$, $|a - b| = |b - a|$,
+            \item \emph{Triangle Inequalities}:
+                For all $a, b \in \mathbb{R}$,
+                \[
+                    |a + b| \leq |a| + |b| \quad \text{and}
+                    \quad \lvert |a| - |b| \rvert \leq |a - b|
+                \]
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.9} Let $x, y, a \in \mathbb{R}$
+        \begin{enumerate}
+            \item $x < y + \epsilon \ \forall \epsilon > 0 \iff x \leq y$
+            \item $x > y - \epsilon \ \forall \epsilon > 0 \iff x \geq y$
+            \item $|a| < \epsilon \ \forall \epsilon > 0 \iff a = 0$
+        \end{enumerate}
+
+\end{itemize}
+
+\subsection{Completeness Axiom}
+
+\begin{itemize}
+    \item \textbf{Definition 1.10} \emph{Upper bounds} \\
+        Let $E \subset \mathbb{R}$ be non-empty
+        \begin{enumerate}
+            \item The set $E$ is said to be \emph{bounded above} if and only if there is an
+                $M \in \mathbb{R}$ such that $a \leq M$ for all $a \in E$,
+                in which case $M$ is called an \emph{upper bound} of $E$.
+            \item A number $s$ is called a \emph{supremum} of the set $E$ if and only if $s$
+                is an upper bound of $E$ and $s \leq M$ for all upper bounds $M$ of $E$.
+                (In this case we shall say that $E$ has a \emph{finite supremeum} $s$ and write
+                $s = \sup E$)
+        \end{enumerate}
+
+    \item \textbf{Remark 1.12}
+        If a set has one upper bound, it has infinitely many upper bounds.
+
+    \item \textbf{Remark 1.13}
+        If a set has a supremum, then it has only one supremum.
+
+    \item \textbf{Theorem} \emph{Approximation Property for Suprema} \\
+        If $E$ has a finite supremum and $\epsilon > 0$ is any positive number, then there is a
+        point $a \in E$ such that
+        \[
+            \sup E - \epsilon < a \leq \sup E
+        \]
+
+    \item \textbf{Theorem 1.15} \\
+        If $E \subset \mathbb{Z}$ has a supremum, then $\sup E \in E$.
+        In particular, if the supremum of a set, which contains only integers, exists,
+        that supremum must be an integer.
+
+    \item \textbf{Postulate 3} \emph{Completeness Axiom} \\
+        If $E$ is a nonempty subset of $\mathbb{R}$ that is bounded above, then $E$ has a finite
+        supremum.
+
+    \item \textbf{Theorem 1.16} \emph{The Archimedean Principle} \\
+        Given real numbers $a$ and $b$, with $a > 0$, there is an integer $n \in \mathbb{N}$
+        such that $b < na$.
+
+    \item \textbf{Theorem 1.18} \emph{Density of Rationals} \\
+        If $a, b, \in \mathbb{R}$ satisfy $a < b$, then there is a $q \in \mathbb{Q}$
+        such that $a < q < b$.
+
+    \item \textbf{Definition 1.19} \emph{Upper bounds} \\
+        Let $E \in \mathbb{R}$ be nonempty
+        \begin{enumerate}
+            \item The set $E$ is said to be \emph{bounded below} if and only if there is an
+                $m \in \mathbb{R}$ such that $a \geq E$, in which case $m$ is called a
+                \emph{lower bound} of the set $E$.
+            \item A number $t$ is called an \emph{infimum} of the set $E$ if and only if $t$
+                is a lower bound of $E$ and $t \geq m$ and write $t = \inf E$.
+            \item $E$ is said to be \emph{bounded} if and only if it is bounded both above and
+                below.
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.20} \emph{Reflection Principle} \\
+        Let $E \in \mathbb{R}$ be nonempty
+        \begin{enumerate}
+            \item $E$ has a supremum if and only if $-E$ has an infimum, in which case
+                \[
+                    \inf (-E) = -\sup E
+                \]
+            \item $E$ has an infimum if and only if $-E$ has a supremum, in which case
+                \[
+                    \sup (-E) = -\inf E
+                \]
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.21} \emph{Monotone Property} \\
+        Suppose that $A \subseteq B$ are nonempty subsets of $\mathbb{R}$.
+        \begin{enumerate}
+            \item If $B$ has a supremum, then $\sup A \leq \sup B$.
+            \item If $B$ has an infimum, then $\inf A \geq \inf B$.
+        \end{enumerate}
+
+\end{itemize}
+
+\subsection{Mathematical Induction}
+
+\begin{itemize}
+    \item \textbf{Theorem 1.22} \emph{Well-Ordering Principle} \\
+        If $E$ is a nonempty subset of $\mathbb{N}$, then $E$ has a least element
+        (i.e.\ $E$ has a finite infimum and $\inf E \in E$).
+
+    \item \textbf{Theorem 1.23} \\
+        Suppose for each $n \in \mathbb{N}$ that $A(n)$ is a proposition which satisfies
+        the following two properties:
+        \begin{enumerate}
+            \item $A(1)$ is true.
+            \item For every $n \in \mathbb{N}$ for which $A(n)$ is true, $A(n+1)$ is also true.
+        \end{enumerate}
+        Then $A(n)$ is true for all $n \in \mathbb{N}$.
+
+    \item \textbf{Theorem 1.26} \emph{Binomial Formula} \\
+        If $a, b, \in \mathbb{R}, n \in \mathbb{N}$ and $0^0$ is interpreted to be $1$, then
+        \[
+            {(a+b)}^n = \sum_{k=0}^n
+            \begin{pmatrix}
+                n \\ k
+            \end{pmatrix}
+            a^{n-k} b^k
+        \]
+
+\end{itemize}
+
+\subsection{Inverse Functions and Images}
+
+\begin{itemize}
+    \item \textbf{Definition 1.29} \emph{Injection, Surjection, Bijection} \\
+        Let $X$ and $Y$ be sets and $f : X \to Y$
+        \begin{enumerate}
+            \item $f$ is said to be \emph{injective} if and only if
+                \[
+                    x_1, x_2 \in X \ \text{and} \ f(x_1) = f(x_2) \implies x_1 = x_2
+                \]
+            \item $f$ is said to be \emph{surjective} if and only if
+                \[
+                    \forall y \in Y \ \exists x \in X \backepsilon y = f(x)
+                \]
+
+            \item $f$ is called \emph{bijective} if and only if it is both injective
+                and surjective
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.30} \\
+        Let $X$ and $Y$ be sets and $f : X \to Y$.
+        Then the following three statements are equivalent.
+        \begin{enumerate}
+            \item $f$ has an inverse;
+            \item $f$ is injective from $X$ onto $Y$;
+            \item There is a function $g : Y \to X$ such that
+                \[
+                    g(f(x)) = x \quad \forall x \in X
+                \]
+                and
+                \[
+                    f(g(y)) = y \quad \forall y \in Y
+                \]
+        \end{enumerate}
+        Moreover, for each $f : X \to Y$, there is only one function $g$ that satisfies these.
+        It is the inverse function $f^{-1}$.
+
+    \item \textbf{Remark 1.31} \\
+        Let $I$ be an interval and let $f : I \to \mathbb{R}$.
+        If the derivative of $f$ is either always positive on $I$, or always negative on $I$,
+        then $f$ is injective on $I$.
+
+    \item \textbf{Definition 1.33} \emph{Image} \\
+        Let $X$ and $Y$ be sets and $f : X \to Y$.
+        The \emph{image} of a set $E \subseteq X$ under $f$ is the set
+        \[
+            f(E) := \{ y \in Y : y = f(x) \ \text{for some} \ x \in E \}
+        \]
+        The \emph{inverse image} of a set $E \subseteq Y$ under $f$ is the set
+        \[
+            f^{-1}(E) := \{ x \in X : f(x) = y \ \text{for some} \ y \in E \}
+        \]
+
+    \item \textbf{Definition 1.35} \emph{Union, Intersection} \\
+        Let $\mathcal{E} = {\{ E_{\alpha} \}}_{\alpha \in A}$ be a collection of sets.
+        \begin{enumerate}
+            \item The \emph{union} of the collection $\mathcal{E}$ is the set
+                \[
+                    \bigcup_{\alpha \in A} E_\alpha := \{ x : x \in E_\alpha \ \text{for some} \
+                    \alpha \in A \}
+                \]
+            \item The \emph{intersection} of the collection $\mathcal{E}$ is the set
+                \[
+                    \bigcap_{\alpha \in A} E_\alpha := \{ x : x \in E_\alpha \ \text{for all} \
+                    \alpha \in A \}.
+                \]
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.36} \emph{DeMorgan's Laws} \\
+        Let $X$ be a set and ${\{ E_\alpha \}}_{\alpha \in A}$ be a collection of subsets of $X$.
+        If for each $E \subseteq X$ the symbol $E^c$ represents the set $X \setminus E$, then
+        \[
+            {\left( \bigcup_{\alpha \in A} E_\alpha \right)}^c =
+            \bigcap_{\alpha \in A} E_\alpha^c
+        \]
+        and
+        \[
+            {\left( \bigcap_{\alpha \in A} E_\alpha \right)}^c =
+            \bigcup_{\alpha \in A} E_\alpha ^ c
+        \]
+
+    \item \textbf{Theorem 1.37} \\
+        Let $X$ and $Y$ be sets and $f : X \to Y$.
+        \begin{enumerate}
+            \item If ${\{ E_\alpha \}}{\alpha \in A}$ is a collection of subsets of $X$, then
+                \[
+                    f \left( \bigcup_{\alpha \in A} E_\alpha \right) =
+                    \bigcup_{\alpha \in A} f(E_\alpha)
+                    \quad \text{and} \quad
+                    f \left( \bigcap_{\alpha \in A} E_\alpha \right) \subseteq
+                    \bigcap_{\alpha \in A} f(E_\alpha)
+                \]
+            \item If $B$ and $C$ are subsets of $X$, then
+                $f(C) \setminus f(B) \subseteq f(C \setminus B)$
+            \item If ${\{E_\alpha\}}_{\alpha \in A}$ is a collection of subsets of $Y$, then
+                \[
+                    f^{-1} \left( \bigcup_{\alpha \in A} E_\alpha \right) =
+                    \bigcup_{\alpha \in A} f^{-1} (E_\alpha)
+                    \quad \text{and} \quad
+                    f^{-1} \left( \bigcap_{\alpha \in A} E_\alpha \right) =
+                    \bigcap_{\alpha \in A} f^{-1} (E_\alpha)
+                \]
+            \item If $B$ and $C$ are subsets of $Y$, then
+                $f^{-1}(C \setminus B) = f^{-1}(C) \setminus f^{-1}(B)$.
+            \item If $E \subseteq f(x)$, then $f(f^{-1}(E)) = E$, but if $E \subseteq X$,
+                then $E \subseteq f^{-1}(f(E))$.
+        \end{enumerate}
+
+\end{itemize}
+
+\subsection{Countable and Uncountable Sets}
+
+\begin{itemize}
+    \item \textbf{Definition 1.38} \emph{Countable & Uncountable}
+        Let $E$ be a set.
+        \begin{enumerate}
+            \item $E$ is said to be \emph{finite} if and only if either $E = \emptyset$
+                or there exists an injective function which takes
+                $\{ 1, 2, \ldots, n \}$ onto $E$, for some $n \in \mathbb{N}$.
+            \item $E$ is said to be \emph{countable} if and only if there exists and injective
+                function which takes $\mathbb{N}$ onto $E$.
+            \item $E$ is said to be \emph{at most countable} if and only if $E$ is either
+                finite or countable.
+            \item $E$ is said to be \emph{uncountable} if and only if $E$ is neither finite nor
+                countable.
+        \end{enumerate}
+
+    \item \textbf{Remark 1.39} \emph{Cantor's Diagonalisation Argument} \\
+        The open interval $(0, 1)$ is uncountable.
+
+    \item \textbf{Lemma 1.40} \\
+        A nonempty set $E$ is at most countable if and only if there is a function $g$ from
+        $\mathbb{N}$ onto $E$.
+
+    \item \textbf{Theorem 1.41} \\
+        Suppose $A$ and $B$ are sets.
+        \begin{enumerate}
+            \item If $A \subseteq B$ and $B$ is at most countable, then $A$ is at most countable.
+            \item If $A \subseteq B$ and $A$ is uncountable, then $B$ is uncountable.
+            \item $\mathbb{R}$ is uncountable.
+        \end{enumerate}
+
+    \item \textbf{Theorem 1.42} \\
+        Let $A_1, A_2, \ldots$ be at most countable sets.
+        \begin{enumerate}
+            \item Then $A_1 \times A_2$ is at most countable.
+            \item If
+                \[
+                    E = \bigcup_{j=1}^\infty A_j :=
+                    \bigcup_{j \in \mathbb{N}} A_j :=
+                    \{ x : x \in A_j \ \text{for some} \ j \in \mathbb{N} \},
+                \]
+                then $E$ is at most countable.
+        \end{enumerate}
+
+    \item \textbf{Remark 1.43} \\
+        The sets $\mathbb{Z}$ and $\mathbb{Q}$ are countable, but the set of irrationals is
+        uncountable.
 
 \end{itemize}
 
