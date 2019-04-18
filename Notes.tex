@@ -679,8 +679,8 @@
         Let $\{x_n\}$ be a sequence of real numbers, $s = \limsup_{n \to \infty} x_n$,
         and $t = \liminf_{n \to \infty} x_n$.
         Then there are subsequences ${\{x_n_k\}}_{k \in \mathbb{N}}$ and
-        ${\{x_\el_j\}}_{j \in \mathbb{N}}$ such that
-        $x_n_k \to s$ as $k \to \infty$ and $x_\el_j \to t$ as $j \to \infty$.
+        ${\{x_\ell_j\}}_{j \in \mathbb{N}}$ such that
+        $x_n_k \to s$ as $k \to \infty$ and $x_\ell_j \to t$ as $j \to \infty$.
 
     \item \textbf{Theorem 2.36} \\
         Let $\{x_n\}$ be a real sequence and $x$ be an extended real number.
@@ -1007,8 +1007,47 @@
         x \in [x_0, x_1]$.
 
     \item \textbf{Theorem 3.29} \emph{Intermediate Value Theorem} \\
+        Suppose that $a < b$ and that $f : [a, b] \to \mathbb{R}$ is continuous.
+        If $y_0$ lies between $f(a)$ and $f(b)$, then there is an $x_0 \in (a, b)$
+        such that $f(x_0) = y_0$.
 
+    \item \textbf{Remark 3.34}
+        The composition of two functions $g \circ f$ can be nowhere continuous,
+        even though $f$ is discontinuous only on $\mathbb{Q}$ and $g$ is discontinuous
+        at only one point.
 
+\end{itemize}
+
+\subsection{Uniform Continuity}
+
+\begin{itemize}
+
+    \item \textbf{Definition 3.35} \emph{Uniform continuity} \\
+        Let $E$ be a nonempty subset of $\mathbb{R}$ and $f : E \to \mathbb{R}$.
+        Then $\mathbb{f}$ is said to be \emph{uniformly continuous} on $E$ if and only if
+        for every $\epsilon > 0$ there is a $\delta > 0$ such that
+        \[
+            |x-a| < delta \quad \text{and} \quad x, a, \in E \implies |f(x) - f(a)| < \epsilon
+        \]
+
+    \item \textbf{Lemma 3.38} \\
+        Suppose that $E \subseteq \mathbb{R}$ and that $f : E \to \mathbb{R}$
+        is uniformly continuous.
+        If $x_n \in E$ is Cauchy, the $f(x_n)$ is Cauchy.
+
+    \item \textbf{Theorem 3.39} \\
+        Suppose that $I$ is a closed, bounded interval.
+        If $f : I \to \mathbb{R}$ is continuous on $I$, then $f$ is uniformly continuous on
+        $I$.
+
+    \item \textbf{Theorem 3.40} \\
+        Suppose that $a < b$ and that $f : (a, b) \to \mathbb{R}$.
+        Then $f$ is uniformly continuous on $(a, b)$ if and only if $f$ can be continuously
+        extended to $[a, b]$; that is, if and only if there is a continuous function
+        $g : [a, b] \to \mathbb{R}$ which satisfies
+        \[
+            f(x) = g(x), \quad x \in (a, b)
+        \]
 \end{itemize}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  18 APR 2019 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  18 APR 2019 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -497,75 +497,20 @@ l.681         Then there are subsequences ${\{x_n_
                                                   k\}}_{k \in \mathbb{N}}$ and
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./Notes.tex:682: Undefined control sequence.
-l.682         ${\{x_\el
-                       _j\}}_{j \in \mathbb{N}}$ such that
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Notes.tex:682: Missing { inserted.
-<to be read again> 
-                   _
-l.682         ${\{x_\el_
-                        j\}}_{j \in \mathbb{N}}$ such that
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
 ./Notes.tex:682: Double subscript.
-l.682         ${\{x_\el_j\}}_
-                             {j \in \mathbb{N}}$ such that
+l.682         ${\{x_\ell_
+                         j\}}_{j \in \mathbb{N}}$ such that
 I treat `x_1_2' essentially like `x_1{}_2'.
-
-./Notes.tex:682: Missing } inserted.
-<inserted text> 
-                }
-l.682         ${\{x_\el_j\}}_{j \in \mathbb{N}}$
-                                                 such that
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 ./Notes.tex:683: Double subscript.
 l.683         $x_n_
-                   k \to s$ as $k \to \infty$ and $x_\el_j \to t$ as $j \to ...
+                   k \to s$ as $k \to \infty$ and $x_\ell_j \to t$ as $j \to...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./Notes.tex:683: Undefined control sequence.
-l.683 ...x_n_k \to s$ as $k \to \infty$ and $x_\el
-                                                  _j \to t$ as $j \to \infty$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Notes.tex:683: Missing { inserted.
-<to be read again> 
-                   _
-l.683 ..._n_k \to s$ as $k \to \infty$ and $x_\el_
+./Notes.tex:683: Double subscript.
+l.683 ...n_k \to s$ as $k \to \infty$ and $x_\ell_
                                                   j \to t$ as $j \to \infty$.
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./Notes.tex:683: Missing } inserted.
-<inserted text> 
-                }
-l.683 ... s$ as $k \to \infty$ and $x_\el_j \to t$
-                                                   as $j \to \infty$.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+I treat `x_1_2' essentially like `x_1{}_2'.
 
 [9]
 ./Notes.tex:697: Double subscript.
@@ -631,33 +576,29 @@ l.953 ...e that $A$ and $B$ are subsets of \mathbb
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1010
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1014.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1014.
+[13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1053.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1053.
  (./Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1014.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1014.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1053.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1053.
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 8EA1D2087A3C739EE8CD7AD3AB4206E1;1147.
+(rerunfilecheck)             Checksum: 784D13273B66AD1E4BBEFEC1C80E3058;1215.
  ) 
 Here is how much of TeX's memory you used:
- 7199 strings out of 492616
- 101019 string characters out of 6135178
+ 7202 strings out of 492616
+ 101056 string characters out of 6135178
  207241 words of memory out of 5000000
- 10896 multiletter control sequences out of 15000+600000
+ 10897 multiletter control sequences out of 15000+600000
  14300 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,43p,813b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (14 pages, 221503 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Notes.pdf (15 pages, 216498 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 105 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
