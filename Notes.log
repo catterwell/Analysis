@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  18 APR 2019 04:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.7)  18 APR 2019 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -414,7 +414,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 ...3}Functions on \mathbb {R}}{11}{section.3}
+l.14 ...3}Functions on \mathbb {R}}{12}{section.3}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -426,18 +426,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 ...entiability on \mathbb {R}}{16}{section.4}
+l.19 ...entiability on \mathbb {R}}{17}{section.4}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-)
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Notes.toc'.
 
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -448,13 +455,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 LaTeX Warning: Command \b invalid in math mode on input line 95.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[2] [3] [4] [5]
+[3] [4] [5] [6]
 ./Notes.tex:386: Misplaced alignment tab character &.
 <argument> Countable &
                        Uncountable
@@ -467,7 +468,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[6]
+[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 437.
@@ -491,7 +492,7 @@ l.461 ...\{x_n\} }_{n \in \mathbb{N}}$, then $x_n_
                                                   k$ converges to $a$ as $k ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[7] [8]
+[8] [9]
 
 ./Notes.tex:652: LaTeX Error: \mathbb allowed only in math mode.
 
@@ -524,13 +525,13 @@ l.690 ...n_k \to s$ as $k \to \infty$ and $x_\ell_
                                                   j \to t$ as $j \to \infty$.
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[9]
+[10]
 ./Notes.tex:704: Double subscript.
 l.704         Namely, if $x_n_
                               k \to x$ as $k \to \infty$, then
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[10]
+[11]
 
 ./Notes.tex:731: LaTeX Error: \mathbb allowed only in math mode.
 
@@ -575,7 +576,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[11] [12]
+[12] [13]
 
 ./Notes.tex:960: LaTeX Error: \mathbb allowed only in math mode.
 
@@ -588,7 +589,7 @@ l.960 ...e that $A$ and $B$ are subsets of \mathbb
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13] [14] [15]
+[14] [15] [16]
 
 ./Notes.tex:1062: LaTeX Error: \mathbb allowed only in math mode.
 
@@ -601,52 +602,52 @@ l.1062 \section{Differentiability on \mathbb{R}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[16] [17] [18]
+[17] [18] [19]
 
-LaTeX Warning: Command \t invalid in math mode on input line 1594.
+LaTeX Warning: Command \t invalid in math mode on input line 1595.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 1594.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1595.
 (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1594.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1595.
 
 
-LaTeX Warning: Command \t invalid in math mode on input line 1594.
+LaTeX Warning: Command \t invalid in math mode on input line 1595.
 
-./Notes.tex:1594: Please use \mathaccent for accents in math mode.
+./Notes.tex:1595: Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.1594         Let $f : \mathbb{R} \t0
+l.1595         Let $f : \mathbb{R} \t0
                                        \mathbb{R}$.
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-./Notes.tex:1594: Missing { inserted.
+./Notes.tex:1595: Missing { inserted.
 <to be read again> 
                    \edef 
-l.1594         Let $f : \mathbb{R} \t0
+l.1595         Let $f : \mathbb{R} \t0
                                        \mathbb{R}$.
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-./Notes.tex:1594: You can't use `\spacefactor' in math mode.
+./Notes.tex:1595: You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.1594         Let $f : \mathbb{R} \t0
+l.1595         Let $f : \mathbb{R} \t0
                                        \mathbb{R}$.
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./Notes.tex:1594: Missing } inserted.
+./Notes.tex:1595: Missing } inserted.
 <inserted text> 
                 }
-l.1594         Let $f : \mathbb{R} \t0 \mathbb{R}$
+l.1595         Let $f : \mathbb{R} \t0 \mathbb{R}$
                                                   .
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -655,36 +656,156 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Missing character: There is no è in font cmex10!
-[19] [20] [21] [22] [23] [24] [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1980.
- [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1980.
+[20] [21] [22] [23] [24] [25] [26] [27]
+Overfull \hbox (11.94116pt too wide) in paragraph at lines 2084--2087
+[]\OT1/cmr/m/n/10.95 The se-ries $[][] \OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )$ is said to \OT1/cmr/m/it/10.95 con-verge ab-so-lutely (point-wise) \OT1/cmr/m/n/10.95 on $\OML/cmm/m/it/10.95 E$ \OT1/cmr/m/n/10.95 if and only if $[][] \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j$
+ []
+
+./Notes.tex:2109: Undefined control sequence.
+l.2109                 and $\sum_{k=1}^\ingty
+                                              f_k'$ converges uniformly on $E$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2109: Double subscript.
+l.2109                 and $\sum_{k=1}^\ingty f_
+                                                k'$ converges uniformly on $E$,
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[28] [29]
+./Notes.tex:2267: Double subscript.
+l.2267 ...$x_n \in X$ converges to $a$ and $\{x_n_
+                                                  k\}$ is any subsequence of
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Notes.tex:2268: Double subscript.
+l.2268                 $\{x_n\}$, then $x_n_
+                                            k$ converges to $a$ as $k \to \i...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[30] [31]
+./Notes.tex:2385: Undefined control sequence.
+l.2385 ...  \rho (x, a) < \delta \ \text{and} \ \x
+                                                   \in E \implies
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[32] [33]
+./Notes.tex:2513: Undefined control sequence.
+<recently read> \del 
+                     
+l.2513             \item $\del
+                               (A \cup B) \subseteq \del A \cup \del B$, \qu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2513: Undefined control sequence.
+l.2513 ...   \item $\del (A \cup B) \subseteq \del
+                                                   A \cup \del B$, \quad and...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2513: Undefined control sequence.
+l.2513 ...el (A \cup B) \subseteq \del A \cup \del
+                                                   B$, \quad and \quad
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2514: Undefined control sequence.
+<recently read> \del 
+                     
+l.2514                 $\del
+                             (A \cap B) \subseteq (A \cap \del B) \cup (B \c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2514: Undefined control sequence.
+l.2514 ... $\del (A \cap B) \subseteq (A \cap \del
+                                                   B) \cup (B \cap \del A) \cup
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2514: Undefined control sequence.
+l.2514 ...bseteq (A \cap \del B) \cup (B \cap \del
+                                                   A) \cup
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2515: Undefined control sequence.
+l.2515                 (\del
+                             A \cap \del B)$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:2515: Undefined control sequence.
+l.2515                 (\del A \cap \del
+                                         B)$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[34]
+./Notes.tex:2634: Undefined control sequence.
+l.2634         Let $E \subseeq
+                               X$ and $f : E \to Y$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[35]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2663.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2663.
  (./Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1980.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1980.
-
-
-Package rerunfilecheck Warning: File `Notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Notes.out':
-(rerunfilecheck)             Before: 2282D23C8B4FD8AD511B7B416BF21E29;2586
-(rerunfilecheck)             After:  52911C670E88D5CD5B811C2B3BBAAA05;2650.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2663.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2663.
+Package rerunfilecheck Info: File `Notes.out' has not changed.
+(rerunfilecheck)             Checksum: 95E1433702587520DB6D3879241EE386;3330.
  ) 
 Here is how much of TeX's memory you used:
- 7305 strings out of 492616
- 102191 string characters out of 6135178
- 207250 words of memory out of 5000000
- 10928 multiletter control sequences out of 15000+600000
+ 7384 strings out of 492616
+ 102941 string characters out of 6135178
+ 208256 words of memory out of 5000000
+ 10941 multiletter control sequences out of 15000+600000
  14300 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,43p,813b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (26 pages, 280014 bytes).
+Output written on Notes.pdf (36 pages, 318816 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 176 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 677 PDF objects out of 1000 (max. 8388607)
+ 615 compressed objects within 7 object streams
+ 242 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 
