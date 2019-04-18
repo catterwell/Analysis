@@ -2660,4 +2660,69 @@
 
 \end{itemize}
 
+\break{}
+
+\section{Contraction Mapping \& ODEs}
+
+\subsection{Banach's Contraction Mapping Theorem}
+
+\begin{itemize}
+    \item \textbf{Definition} \emph{Contraction} \\
+        Let $(X, d)$ be a metric space.
+        A function $f : X \to X$ is called a \emph{contraction} if there exists a number
+        $\alpha$ with $0 < \alpha < 1$ such that
+        \[
+            d(f(x), f(y)) \leq \alpha d(x, y) \ \forall x, y \in X.
+        \]
+        Note the target space and the domain mus be the same.
+
+    \item \textbf{Remark} \\
+        \begin{enumerate}
+            \item It is \emph{really} important that $\alpha$ be \emph{strictly less} than 1.
+                It's also really important that we have $d(f(x), f(y)) \leq \alpha d(x, y)$
+                and \emph{not just} $d(f(x), f(y)) < d(x, y) \ \forall x, y \in X$.
+                So $f(x) = \cos(x)$ is not a contraction on $\mathbb{R}$.
+            \item The constant $\alpha < 1$ is called the \emph{contraction constant} of $f$.
+        \end{enumerate}
+
+    \item \textbf{Theorem} \\
+        If $(X, d)$ is a complete metric space and if $f : X \to X$ is a contraction,
+        then there is a unique point $x \in X$ such that $f(x) = x$.
+
+    \item \textbf{Remarks}
+        \begin{enumerate}
+            \item It's really important that $X$ be complete.
+            \item It's really important that the image of $X$ under $f$ is contained in $X$.
+            \item A point $x$ such that $f(x) = x$ is called a \emph{fixed point} of $f$.
+        \end{enumerate}
+
+    \item \textbf{Remarks}
+
+\end{itemize}
+
+\subsection{Existence and uniqueness for solutions to ODEs}
+
+\begin{itemize}
+
+    \item \textbf{Definition} \emph{Lipschitz Condition} \\
+        Suppose $A \in \mathbb{R}$, $\rho, r > 0$, and
+        $F : [A - \rho, A + \rho] \times [-r, r] \to \mathbb{R}$ is continuous.
+        Suppose also that for all $x, y \in [A - \rho, A + \rho]$ and all $t \in [-r, r]$
+        we have, for some $M > 0$
+        \[
+            | F(x, t) - F(y, t) | \leq M|x-y|
+        \]
+
+    \item \textbf{Theorem} \emph{Picard} \\
+        Suppose $F$ satisfies the Lipschitz Condition.
+        Then there exists an $s > 0$ such that the ODE
+        \begin{align*}{}
+            \frac{\mathrm{d}x}{\mathrm{d}t} &= F(x, t) \\
+            x(0) &= A
+        \end{align*}
+        has a unique solution $x(t)$ for $|t| < s$.
+        
+\end{itemize}
+
+
 \end{document}
