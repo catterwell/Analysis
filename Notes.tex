@@ -24,8 +24,6 @@
 \title{Honours Analysis Notes}
 \author{Anthony Catterwell}
 
-\pagenumbering{gobble}
-
 \begin{document}
 \maketitle
 \tableofcontents
@@ -718,6 +716,298 @@
             \limsup_{n \to \infty} x_n \leq \limsup_{n \to \infty} y_n \quad \text{and} \quad
             \liminf_{n \to \infty} y_n \leq \liminf_{n \to \infty} y_n
         \]
+
+\end{itemize}
+
+\break{}
+
+\section{Functions on \mathbb{R}}
+
+\subsection{Two-Sided Limits}
+
+\begin{itemize}
+    \item \textbf{Definition 3.1} \emph{Limits} \\
+        Let $a \in \mathbb{R}$, let $I$ be an open interval which contains $a$, and let $f$ be
+        a real function defined everywhere on $I$ except possibly at $a$.
+        Then $f(x)$ is said to \emph{converge to $L$, as $x$ approaches $a$},
+        if and only if for every $\epsilon > 0$ there is a $\delta > 0$
+        (which in general depends on $\epsilon, f, I$, and $a$) such that
+        \[
+            0 < |x - a| < \delta \implies |f(x) - L| < \epsilon
+        \]
+        In this case we write
+        \[
+            L = \lim_{x \to a} f(x) \quad \text{or} \quad f(x) \to L \ \text{as} \ x \to a
+        \]
+        and call $L$ the \emph{limit} of $f(x)$ as $x$ approaches $a$.
+
+    \item \textbf{Remark 3.4} \\
+        Let $a \in \mathbb{R}$, let $I$ be an open interval which contains $a$, and let
+        $f$, $g$ be real functions defined everywhere on $I$ except possibly at $a$.
+        If $f(x) = g(x)$ for all $x \in I \setminus \{a\}$ and $f(x) \to L$ as
+        $x \to a$, then $g(x)$ also has a limit as $x \to a$, and
+        \[
+            \lim_{x \to a} g(x) = \lim_{x \to a} f(x)
+        \]
+
+    \item \textbf{Theorem 3.6} \emph{Sequential Characterisation of Limits} \\
+        Let $a \in \mathbb{R}$, let $I$ be an open interval which contains $a$, and let
+        $f$ be a real function defined everywhere on $I$ except possibly at $a$.
+        Then
+        \[
+            L = \lim_{x \to a} f(x)
+        \]
+        exists if and only if $f(x_n) \to L$ as $n \to \infty$ for every sequence
+        $\{x_n\} \in I \setminus \{a\}$ which converges to $a$ as $n \to \infty$.
+
+    \item \textbf{Theorem 3.8} \\
+        Suppose that $a \in \mathbb{R}$, that $I$ is an open interval which contains $a$,
+        and that $f$, $g$, are real functions defined everywhere on $I$ except possibly
+        at $a$.
+        If $f(x)$ and $g(x)$ converge as $x$ approaches $a$, then so do
+        $(f + g)(x), (fg)(x), (\alpha f)(x)$, and $(f/g)(x)$
+        (when the limit of $g(x)$ is nonzer).
+        In fact,
+        \begin{align*}{}
+            \lim_{x \to a} (f + g)(x) &= \lim_{x \to a} + \lim_{x \to a} g(x) \\
+            \lim_{x \to a} (\alpha f)(x) &= \aplha \lim_{x \to a} f(x) \\
+            \lim_{x \to a} (fg)(x) &= \lim_{x \to a} \lim_{x \to a} g(x) \\
+        \end{align*}
+        and (when the limit of $g(x)$ is nonzero)
+        \[
+            \lim_{x \to a} \left( \frac{f}{g} \right) (x) &=
+            \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}
+        \]
+
+    \item \textbf{Theorem 3.9} \emph{Squeeze Theorem for Functions} \\
+        Suppose that $a \in \mathbb{R}$, that $I$ is an open interval which contains $a$,
+        and that $f, g, h$ are real functions defined everywhere on $I$ except possibly at $a$.
+        \begin{enumerate}
+            \item If $g(x) \leq h(x) \leq f(x) \ \forall x \in I \setminus \{a\}$, and
+                \[
+                    \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = L,
+                \]
+                then the limit of $h(x)$ exists, as $x \to a$, and
+                \[
+                    \lim_{x \to a} h(x) = L.
+                \]
+            \item If $|g(x)| \leq M \ \forall x \in I \setminus \{a\}$ and $f(x) \to 0$
+                as $x \to a$, then
+                \[
+                    \lim_{x \to a} f(x) g(x) = 0
+                \]
+
+        \end{enumerate}
+
+    \item \textbf{Theorem 3.10} \emph{Comparison Theorem for Functions} \\
+        Suppose that $a \in \mathbb{R}$, that $I$ is an open interval which contains $a$,
+        and that $f, g$ are real functions defined everywhere on $I$ except possibly at $a$.
+        If $f$ and $g$ have a limit as $x$ approaches $a$ and
+        $f(x) \leq g(x) \ \forall x \in I \setminus \{a\}$, then
+        \[
+            \lim_{x \to a} f(x) \leq \lim_{x \to a} g(x)
+        \]
+
+\end{itemize}
+
+\subsection{One-Sided Limits and Limits at Infinity}
+
+\begin{itemize}
+    \item \textbf{Definition 3.12} \emph{Converge from left \& right} \\
+        Let $a \in \mathbb{R}$ and $f$ be a real function.
+        \begin{enumerate}
+            \item $f(x)$ is said to \emph{converge to $L$ as $x$ approaches $a$ from the right}
+                if and only if $f$ is defined on some open interval $I$ with left endpoint $a$
+                and for every $\epsilon > 0$ there is a $\delta > 0$
+                (which in general depends on $\epsilon, f, I$, and $a$) such that
+                \[
+                    a + \delta \in I \quad \text{and} \quad a < x < a + \delta \implies
+                    |f(x) - L| < \epsilon
+                \]
+                in this case we call $L$ the \emph{right-hand limit} of $f$ at $a$,
+                and denote it by
+                \[
+                    f(a+) := L =: \lim_{x \to a+} f(x)
+                \]
+            \item $f(x)$ is said to \emph{converge to $L$ as $x$ approaches $a$ from the left}
+                if and only if $f$ is defined on some open interval $I$ with left endpoint $a$
+                and for every $\epsilon > 0$ there is a $\delta > 0$
+                (which in general depends on $\epsilon, f, I$, and $a$) such that
+                \[
+                    a + \delta \in I \quad \text{and} \quad a < x < a + \delta \implies
+                    |f(x) - L| < \epsilon
+                \]
+                in this case we call $L$ the \emph{left-hand limit} of $f$ at $a$,
+                and denote it by
+                \[
+                    f(a-) := L =: \lim_{x \to a-} f(x)
+                \]
+        \end{enumerate}
+
+    \item \textbf{Theorem 3.14} \\
+        Let $f$ be a real function.
+        Then the limit
+        \[
+            \lim_{x \to a} f(x)
+        \]
+        exists and equals $L$ if and only if
+        \[
+            L = \lim_{x \to a+} f(x) = \lim_{x \to a-} f(x)
+        \]
+
+    \item \textbf{Definition 3.15} \emph{Convergence} \\
+        Let $a, L, \in \mathbb{R}$ and let $f$ be a real function.
+        \begin{enumerate}
+            \item $f(x)$ is said to \emph{converge} to $L$ as $x \to \infty$ if and only if
+                there exists a $c > 0$ such that $(c, \infty) \subset \mathrm{Dom}(f)$
+                and given $\epsilon > 0$ there is an $M \in \mathbb{R}$ such that
+                $x > M$ implies $|f(x) - L| < \epsilon$, in which case we shall write
+                \[
+                    \lim_{x \to \infty} f(x) = L \quad \text{or} \quad
+                    f(x) \to L \ \text{as} \ x \to \infty
+                \]
+                Similarly, $f(x)$ is said to \emph{converge} to $L$ as $x \to -\infty$
+                if and only if there exists a $c > 0$ such that
+                $(\-infty, -c) \subset \mathrm{Dom}(f)$ and given $\epsilon > 0$ there is
+                $M \in \mathbb{R}$ such that $x > M$ implies $|f(x) - L| < \epsilon$,
+                in which case we shall write
+                \[
+                    \lim_{x \to \infty} = L \quad \text{or} \quad
+                    f(x) \to L \ \text{as} \ x \to \infty
+                \]
+            \item The function $f(x)$ is said to converge to $\infty$ as $x \to a$
+                if and only if there is an open interval $I$ containing $a$ such that
+                $I \setminus \{a\} \subset \mathrm{Dom}(f)$ and given $M \in \mathrm{R}$
+                there is a $\delta > 0$ such that $0 \leq |x - a| < \delta$ implies
+                $f(x) < M$, in which case we shall write
+                \[
+                    \lim_{x \to a} f(x) = \infty \quad \text{or} \quad
+                    f(x) \to \infty \ \text{as} \ x \to a
+                \]
+                Similarly, $f(x)$ is said to \emph{converge} to $-\infty$ as $x \to a$
+                if and only if there is an open interval $I$ containing $a$ such that
+                $I \setminus \{a\} \subset \mathrm{Dom}(f)$ and given $M \in \mathbb{R}$
+                there is a $\delta > 0$ such that $0 < |x-a| < \delta$ implies $f(x) < M$,
+                in which case we shall write
+                \[
+                    \lim_{x \to a} f(x) = -\infty \quad \text{or} \quad
+                    f(x) \to -\infty \ \text{as} \ x \to a
+                \]
+
+        \end{enumerate}
+
+    \item \textbf{Theorem 3.17} \\
+        Let $a$ be an extended real number, and let $I$ be a nondegenerate open interval which
+        either contains $a$ or has $a$ as one of its endpoints.
+        Suppose further that $f$ is a real function defined on $I$ except possibly at $a$.
+        Then
+        \[
+            \lim_{x \to a; x \in I} f(x)
+        \]
+        exists and equals $L$ if and only if $f(x_n) \to L$ for all sequences $x_n \in I$
+        which satisfy $x_n \neq a$ and $x_n \to a$ as $n \to \infty$.
+\end{itemize}
+
+\subsection{Continuity}
+
+\begin{itemize}
+    \item \textbf{Definition 3.19} \emph{Continuous} \\
+        Let $E$ be a nonempty subset of $\mathbb{R}$ and $f : E \to \mathbb{R}$.
+        \begin{enumerate}
+            \item $f$ is said to be \emph{continuous at a point $a \in \mathbb{E}$} if and only
+                if given $\epsilon > 0$ there is a $\delta > 0$
+                (which in general depends on $\epsilon, f$, and $a$) such that
+                \[
+                    |x-a| < delta \quad \text{and} \quad x \in E \implies
+                    |f(x) - f(a)| < \epsilon
+                \]
+
+            \item $f$ is said to be \emph{continuous on $E$} if and only if $f$ is continuous
+                at every $x \in E$.
+        \end{enumerate}
+    \item \textbf{Remark 3.20} \\
+        Let $I$ be an open interval which contains a point $a$ and $f : I \to \mathbb{R}$.
+        Then $f$ is continuous at $a \in \mathbb{I}$ if and only if
+        \[
+            f(a) = \lim_{x \to a} f(x)
+        \]
+
+    \item \textbf{Theorem 3.21} \\
+        Suppose that $E$ is a nonempty subset of $\mathbb{R}$, that $a \in E$, and that
+        $f : E \to \mathbb{R}$.
+        Then the following statements are equivalent:
+        \begin{enumerate}
+            \item $f$ is continuous at $a \in E$.
+            \item If $x_n$ converges to $a$ and $x_n \in E$, then
+                $f(x_n) \to f(a)$ as $n \to \infty$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 3.22} \\
+        Let $E$ be a nonempty subset of $\mathbb{R}$ and $f, g : E \to \mathbb{R}$.
+        If $f, g$ are continuous at a point $a \in E$ (respectively continuous on the set $E$),
+        then so are $f+g$, $fg$, and $\alpha f$ (for any $\alpha \in \mathbb{R}$).
+        Moreover, $f/g$ is continuous at $a \in E$ when $g(a) \neq 0$
+        (respectively, on $E$ when $g(x) \neq 0\ \forall x \in E$).
+
+    \item \textbf{Definition 3.23} \emph{Composition} \\
+        Suppose that $A$ and $B$ are subsets of \mathbb{R}, that $f : A \to \mathbb{R}$
+        and $g : B \to \mathbb{R}$.
+        If $F(A) \subseteq B$ for every $x \in A$, then the \emph{composition} of $g$ with $f$
+        is the function $g \circ f : A \to \mathbb{R}$ defined by
+        \[
+            (g \circ f) (x) := g(f(x)), \quad x \in A
+        \]
+
+    \item \textbf{Theorem 3.24} \\
+        Suppose that $A$ and $B$ are subsets of $\mathbb{R}$, that $f : A \to \mathbb{R}$
+        and $g : B \to \mathbb{R}$, and that $f(x) \in B \ \forall x \in A$.
+        \begin{enumerate}
+            \item If $A := I \setminus \{a\}$, where $I$ is a nondegenerate interval which
+                either contains $a$ or has $a$ as one of its endpoints, if
+                \[
+                    L := \lim_{x \to a; x \in I} f(x)
+                \]
+                exists and belongs to $B$, and if $g$ is continuous and $L \in B$, then
+                \[
+                    (g \circ f) (x) =
+                    g \left( \lim_{x \to a; x \in I} f(x)\right)
+                \]
+            \item If $f$ is continuous at $a \in A$ and $g$ is continuous at $f(a) \in B$,
+                then $g \circ f$ is continuous at $a \in A$.
+        \end{enumerate}
+
+    \item \textbf{Definition 3.25} \emph{Bounded} \\
+        Let $E$ be a nonempty subset of $\mathbb{R}$.
+        A function $f : E \to \mathbb{R}$ is said to be \emph{bounded} on E if and only if
+        there is an $M \in \mathbb{R}$ such that $|f(x)| \leq M$ for all $x \in E$, in
+        which case we shall say that $f$ is \emph{dominated} by $M$ on $E$.
+
+    \item \textbf{Theorem 3.26} \emph{Extreme Value Theorem} \\
+        If $I$ a is closed, bounded interval and $f : I \to \mathbb{R}$ is continuous on $I$,
+        then $f$ is bounded on $I$.
+        Moreover if
+        \[
+            M = \sup_{x \in I} f(x) \quad \text{and} \quad m = \inf_{x \in I} f(x)
+        \]
+        then there exist points $x_m, x_M \in I$ such that
+        \[
+            f(x_M) = M \quad \text{and} \quad f(x_m) = m
+        \]
+
+
+    \item \textbf{Remark 3.27}
+        The Existence Value Theorem is false if either ``closed'' or ``bounded'' is dropped
+        from the hypotheses.
+
+    \item \textbf{Lemma 3.28} \\
+        Suppose that $a < B$ and that $f : [a, b) \to \mathbb{R}$.
+        If $f$ is continuous at a point $x_0 \in [a,b)$ and $f(x_0) > 0$,
+        then there exist a positive number $\epsilon$ and a point
+        $x_1 \in [a, b)$ such that $x_1 > x_0$ and $f(x) > \epsilon \ \forall
+        x \in [x_0, x_1]$.
+
+    \item \textbf{Theorem 3.29} \emph{Intermediate Value Theorem} \\
+
 
 \end{itemize}
 
