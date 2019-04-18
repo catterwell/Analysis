@@ -65,7 +65,8 @@
                 $1 \neq 0$ and $1 \cdot a = a$ for all $a \in \mathbb{R}$
 
             \item \emph{Existence of Additive Inverses}:
-                For every $x \in \mathbb{R}$ there is a unique element $-x \in \mathbb{R}$ such that
+                For every $x \in \mathbb{R}$ there is a unique element $-x \in \mathbb{R}$
+                such that
                 \[
                     x + (-x) = 0
                 \]
@@ -112,7 +113,8 @@
         \end{itemize}
 
     \item \textbf{Remark 1.1} \\
-        We will assume that the sets $\mathbb{N}$ and $\mathbb{Z}$ satisfy the following properties:
+        We will assume that the sets $\mathbb{N}$ and $\mathbb{Z}$ satisfy the following
+        properties:
         \begin{enumerate}
             \item If $n, m \in \mathbb{Z}$, then $n + m, n - m$ and $mn$ belong to $\mathbb{Z}$
             \item If $n \in \mathbb{Z}$, then $n \in \mathbb{N}$ if and only if $n \geq 1$
@@ -146,7 +148,7 @@
                 For all $a, b \in \mathbb{R}$,
                 \[
                     |a + b| \leq |a| + |b| \quad \text{and}
-                    \quad \lvert |a| - |b| \rvert \leq |a - b|
+                    \quad \left| |a| - |b| \right| \leq |a - b|
                 \]
         \end{enumerate}
 
@@ -193,7 +195,8 @@
         that supremum must be an integer.
 
     \item \textbf{Postulate 3} \emph{Completeness Axiom} \\
-        If $E$ is a nonempty subset of $\mathbb{R}$ that is bounded above, then $E$ has a finite
+        If $E$ is a nonempty subset of $\mathbb{R}$ that is bounded above, then $E$ has a
+        finite
         supremum.
 
     \item \textbf{Theorem 1.16} \emph{The Archimedean Principle} \\
@@ -324,8 +327,8 @@
         \begin{enumerate}
             \item The \emph{union} of the collection $\mathcal{E}$ is the set
                 \[
-                    \bigcup_{\alpha \in A} E_\alpha := \{ x : x \in E_\alpha \ \text{for some} \
-                    \alpha \in A \}
+                    \bigcup_{\alpha \in A} E_\alpha := \{ x : x \in E_\alpha \ \text{for some}
+                    \ \alpha \in A \}
                 \]
             \item The \emph{intersection} of the collection $\mathcal{E}$ is the set
                 \[
@@ -335,7 +338,8 @@
         \end{enumerate}
 
     \item \textbf{Theorem 1.36} \emph{DeMorgan's Laws} \\
-        Let $X$ be a set and ${\{ E_\alpha \}}_{\alpha \in A}$ be a collection of subsets of $X$.
+        Let $X$ be a set and ${\{ E_\alpha \}}_{\alpha \in A}$ be a collection of subsets of
+        $X$.
         If for each $E \subseteq X$ the symbol $E^c$ represents the set $X \setminus E$, then
         \[
             {\left( \bigcup_{\alpha \in A} E_\alpha \right)}^c =
@@ -403,7 +407,8 @@
     \item \textbf{Theorem 1.41} \\
         Suppose $A$ and $B$ are sets.
         \begin{enumerate}
-            \item If $A \subseteq B$ and $B$ is at most countable, then $A$ is at most countable.
+            \item If $A \subseteq B$ and $B$ is at most countable, then $A$ is at most
+                countable.
             \item If $A \subseteq B$ and $A$ is uncountable, then $B$ is uncountable.
             \item $\mathbb{R}$ is uncountable.
         \end{enumerate}
@@ -436,8 +441,8 @@
 \begin{itemize}
     \item \textbf{Definition 2.1} \emph{Convergence} \\
         A sequence of real numbers $\{ x_n \}$ is set to \emph{converge} to a real number
-        $a \in \mathbb{R}$ if and only if for every $\epsilon > 0$ there is an $N \in \mathbb{N}$
-        (which in general depends on $\epsilon$) such that
+        $a \in \mathbb{R}$ if and only if for every $\epsilon > 0$ there is an
+        $N \in \mathbb{N}$ (which in general depends on $\epsilon$) such that
         \[
             n \geq N \implies |x_n - a| < \epsilon
         \]
@@ -494,7 +499,8 @@
         as $n \to \infty$.
 
     \item \textbf{Theorem 2.12} \\
-        Suppose that $\{x_n\}$ and $\{y_n\}$ are real sequences and that $\alpha \in \mathbb{R}$.
+        Suppose that $\{x_n\}$ and $\{y_n\}$ are real sequences and that
+        $\alpha \in \mathbb{R}$.
         If $\{x_n\}$ and $\{y_n\}$ are convergent, then
         \begin{enumerate}
             \item
@@ -574,7 +580,8 @@
         \]
         provided that the right side is not of the form $\infty - \infty$, and
         \[
-            \lim_{n \to \infty} (\alpha x_n) = \alpha x, \quad \lim_{n \to \infty} (x_n y_n) = xy
+            \lim_{n \to \infty} (\alpha x_n) = \alpha x, \quad
+            \lim_{n \to \infty} (x_n y_n) = xy
         \]
         provided that none of these products is of the form $0 \cdot \pm \infty$.
 
@@ -691,9 +698,9 @@
 
     \item \textbf{Theorem 2.37} \\
         Let $\{x_n\}$ be a sequence of real numbers.
-        Then $\limsup_{n \to \infty} x_n$ (respectively, $\liminf_{n \to \infty}$) is the largest
-        value (respectively, the smallest value) to which some subsequences of $\{x_n\}$
-        converges.
+        Then $\limsup_{n \to \infty} x_n$ (respectively, $\liminf_{n \to \infty}$) is the
+        largest value (respectively, the smallest value) to which some subsequences of
+        $\{x_n\}$ converges.
         Namely, if $x_n_k \to x$ as $k \to \infty$, then
         \[
             \liminf_{n \to \infty} x_n \leq x \leq \limsup_{n \to \infty} x_n
@@ -1268,6 +1275,706 @@
         Let $I$ be an open interval and $f : I \to \mathbb{R}$ be injective and continuous.
         If $b = f(a)$ for some $a \in I$ and if $f'(a)$ exists and is nonzero,
         then $f^{-1}$ is differentiable at $b$ and $(f^{-1})'(b) = \frac{1}{f'(a)}$.
-\end{itemize}<++>
+\end{itemize}
+
+\break{}
+
+% \section{Integrability on \mathbb{R}}
+
+% \subsection{The Riemann Integral}
+
+% \begin{itemize}
+%     \item \textbf{Definition 5.1} \emph{Partition, Norm, Refinement} \\
+%         Let $a, b, \in \mathbb{R}$ with $a < b$.
+%         \begin{enumerate}
+%             \item A \emph{partition} of the interval $[a, b]$ is a set of points
+%                 $P = \{x_0, x_1, \ldots, x_n\}$ such that
+%                 \[
+%                     a = x_0 < x_1 < \cdots < x_n = b
+%                 \]
+%             \item The \emph{norm} of a partition $P = \{x_0, x_1, \ldots, x_n\}$
+%                 is the number
+%                 \[
+%                     \lVert P \rVert = \max_{1 \leq j \leq n} |x_j - x_{j-1}|
+%                 \]
+%             \item A \emph{refinement} of a partition $P = \{x_0, x_1, \ldots, x_n\}$
+%                 is a partition $Q$ of $[a, b]$ which satisfies $Q \supseteq P$.
+%                 In this case we say that $Q$ is \emph{finer} than $P$.
+%         \end{enumerate}
+
+%     \item \textbf{Definition 5.3} \emph{Riemann Sums} \\
+%         Let $a, b \in \mathbb{R}$ with $a < b$, let $P = \{x_0, x_1, \ldots, x_n\}$
+%         be a partition of the interval $[a, b]$,
+%         set $\Delta x_j := x_j - x_{j-1}$ for $j = 1, 2, \ldots, n$
+%         and suppose that $f : [a, b] \to \mathbb{R}$ is bounded.
+%         \begin{enumerate}
+%             \item The \emph{upper Riemman sum} of $f$ over $P$ is the number
+%                 \[
+%                     U(f, P) := \sum_{j=1}^n M_j(f) \Delta x_j,
+%                 \]
+%                 where
+%                 \[
+%                     M_j(f) := \sup f([x_{j-1, x_j}]) := \sup_{t \in [x_{j-1}, x_j]} f(t)
+%                 \]
+%             \item The \emph{lower Riemman sum} of $f$ over $P$ is the number
+%                 \[
+%                     L(f, P) := \sum_{j=1}^n m_j(f) \Delta x_j,
+%                 \]
+%                 where
+%                 \[
+%                     m_j(f) := \inf f([x_{j-1, x_j}]) := \inf_{t \in [x_{j-1}, x_j]} f(t)
+%                 \]
+%                 (Since we assumed that $f$ is bounded, the numbers $M_j(f)$ and $m_j(f)$
+%                 exist and are finite.)
+%         \end{enumerate}
+
+%     \item \textbf{Remark 5.4}
+
+%         \vdots
+
+%     \item \textbf{Remark 5.8}
+
+%     \item \textbf{Definition 5.9} \emph{Riemann Integrable} \\
+%         Let $a, b \in \mathbb{R}$ with $a < b$.
+%         A function $f : [a, b] \to \mathbb{R}$ is said to be (\emph{Riemann}) \emph{integrable}
+%         on $[a, b]$ if and only if $f$ is bounded on $[a, b]$, and for every $\epsilon > 0$
+%         there is a partition $P$ of $[a, b]$ such that $U(f, p) - L(f, p) < \epsilon$.
+
+%     \item \textbf{Theorem 5.10} \\
+%         Suppose that $a, b \in \mathbb{R}$ with $a, b$.
+%         If $f$ is continuous on the interval $[a, b]$, then $f$ is integrable on $[a, b]$.
+
+%     \item \textbf{Definition 5.13} \emph{Integral} \\
+%         Let $a, b \in \mathbb{R}$ with $a < b$ and $f : [a, b] \to \mathbb{R}$ be bounded.
+%         \begin{enumerate}
+%             \item The \emph{upper integral} of $f$ on $[a, b]$ is the number
+%                 \[
+%                     (U) \int_a^b \,\mathrm{d}x := \inf \{U(f, P) : P \ \text{is a partition of}
+%                     \ [a, b]\}
+%                 \]
+%             \item The \emph{lower integral} of $f$ on $[a, b]$ is the number
+%                 \[
+%                     (L) \int_a^b \,\mathrm{d}x := \sup \{L(f, P) : P \ \text{is a partition of}
+%                     \ [a, b]\}
+%                 \]
+%             \item If the upper and lower integrals of $f$ on $[a, b]$ are equal,
+%                 we define the \emph{integral} of $f$ on $[a, b]$ to be the common value
+%                 \[
+%                     \int_a^b f(x) \,\mathrm{d}x :=
+%                     (U) \int_a^b f(x)\,\mathrm{d}x = (L) \int_a^b f(x)\,\mathrm{d}x
+%                 \]
+%         \end{enumerate}
+
+%     \item \textbf{Remark 5.14} \\
+%         If $f : [a, b] \to \mathbb{R}$ is bounded, then its upper and lower integrals exists
+%         and are finite, and satisfy
+%         \[
+%             (L) \int_a^b f(x) \,\mathrm{d}x \leq (U) \int_a^b f(x) \,\mathrm{d}x
+%         \]
+
+%     \item \textbf{Theorem 5.15} \\
+%         Let $a, b \in \mathbb{R}$ with $a < b$, and $f : [a, b] \to \mathbb{R}$ be bounded.
+%         Then $f$ is integrable on $[a, b]$ if and only if
+%         \[
+%             (L) \int_a^b f(x) \,\mathrm{d}x = (U) \int_a^b f(x) \,\mathrm{d}x
+%         \]
+
+%     \item \textbf{Theorem 5.16} \\
+%         If $f(x) = \alpha$ is constant on $[a, b]$, then
+%         \[
+%             \int_a^b f(x) \, \mathrm{d}x = \alpha(b-a)
+%         \]
+
+% \end{itemize}
+
+% \subsection{Riemann Sums}
+
+% \begin{itemize}
+%     \item \textbf{Definition 5.17} \emph{Riemann sum} \\
+%         Let $f : [a, b] \to \mathbb{R}$.
+%         \begin{enumerate}
+%             \item A \emph{Riemann sum} of $f$ with respect to a partition
+%                 $P = \{ x_0, \ldots, x_n \}$ of $[a, b]$ generated by samples
+%                 $t_j \in [x_{j-1}, x_j]$ is a sum
+%                 \[
+%                     \mathcal{S}(f, P, t_j) := \sum_{j=1}^n f(t_j) \Delta x_j
+%                 \]
+
+%             \item The Riemann sums of $f$ are said to \emph{converge} to $I(f)$
+%                 as $\lVert P \rVert \to 0$ if and only if given
+%                 $\epsilon > 0$ there is a partition $P_\epsilon$ of $[a, b]$ such that
+%                 \[
+%                     P = \{ x_0, \ldots, x_n \} \supseteq P_\epsilon \implies
+%                     |\mathcal{S} (f, P, t_j) - I(f)| < \epsilon
+%                 \]
+%                 for all choices of $t_j \in [x_{j-1}, x_j], j = 1, 2, \ldots, n$.
+%                 In this case we shall use the notation
+%                 \[
+%                     I(f) = \lim_{\lVert P \rVert \to 0}
+%                     \mathcal{S} (f, P, t_j) :=
+%                     \lim_{\lVert P \rVert \to 0}
+%                     \sum_{j=1}^n f(t_j) \Delta x_j
+%                 \]
+
+%         \end{enumerate}
+
+%     \item \textbf{Theorem 5.18} \\
+%         Let $a, b, \in \mathbb{R}$ with $a < b$, and suppose that $f : [a, b] \to \mathbb{R}$.
+%         Then $f$ is Riemann integrable on $[a, b]$ if and only if
+%         \[
+%             I(f) = \lim_{\lVert P \rVert \to 0}
+%             \sum_{j=1}^n f(t_j) \Delta x_j
+%         \]
+%         exists, in which case $I(f) = \int_a^b f(x) \, \mathrm{d}x$.
+
+%     \item \textbf{Theorem 5.19} \emph{Linear Property} \\
+%         If $f, g$ are integrable on $[a, b]$ and $\alpha \in \mathbb{R}$, then
+%         $f + g$ and $\alpha f$ are integrable on $[a, b]$.
+%         In fact
+%         \[
+%             \int_a^b (f(x) + g(x)) \, \mathrm{d}x =
+%             \int_a^b f(x)\, \mathrm{d}x + ,int_a^b g(x) \, \mathrm{d}x
+%         \]
+%         and
+%         \[
+%             \int_a^b (\alpha f(x)) \, \mathrm{d}x = \alpha \int _a^b f(x) \, \mathrm{d}x
+%         \]
+
+%     \item \textbf{Theorem 5.20} \\
+%         If $f$ is integrable on $[a, b]$, then $f$ is integrable on each subinterval
+%         $[c, d]$ of $[a, b]$.
+%         Moreover
+%         \[
+%             \int_a^b f(x) \, \mathrm{d}x =
+%             \int_a^c f(x) \, \mathrm{d}x + \int_c^b f(x) \, \mathrm{d}x
+%         \]
+%         for all $c \in (a, b)$.
+
+
+%     \item \textbf{Theorem 5.21} \emph{Comparison Theorem for Integrals} \\
+%         If $f, g$ are integrable on $[a, b]$ and $f(x) \leq g(x) \ \forall x \in [a, b]$,
+%         then
+%         \[
+%             \int_a^b f(x)\, \mathrm{d}x \leq \int_a^b g(x) \, \mathrm{d}x
+%         \]
+%         In particular, if $m \leq f(x) \leq M$ for $x \in [a, b]$, then
+%         \[
+%             m(b-a) \leq \int_a^b f(x) \, \mathrm{d}x \leq M(b-a)
+%         \]
+
+%     \item \textbf{Theorem 5.22} \\
+%         If $f$ is (Riemann) integrable on $[a, b]$, then $|f|$ is integrable on $[a, b]$ and
+%         \[
+%             \lvert \int_a^b f(x)\,\mathrm{d}x \rvert \leq \int_a^b |f(x)|\,\mathrm{d}x
+%         \]
+
+%     \item \textbf{Corollary 5.23} \\
+%         If $f$ and $g$ are (Riemann) integrable on $[a, b]$, then so is $fg$.
+
+%     \item \textbf{Theorem 5.24} \emph{First Mean Value Theorem for Integrals} \\
+%         Suppose that $f$ and $g$ are integrable on $[a, b]$ with
+%         $g(x) \geq 0 \ \forall x \in [a, b]$.
+%         If
+%         \[
+%             m = \inf f[a, b] \quad \text{and} \quad M = \sup f[a, b]
+%         \]
+%         then there is a number $c \in [m, M]$ such that
+%         \[
+%             \int_a^b f(x) g(x) \, \mathrm{d}x = c \int_a^b g(x) \, \mathrm{d}x.
+%         \]
+%         In particular, if $f$ is continuous on $[a, b]$, then there is an
+%         $x_0 \in [a, b]$ which satisfies
+%         \[
+%             \int_a^b f(x) g(x) \, \mathrm{d}x = f(x_0) \int_a^b g(x)\, \mathrm{d}x
+%         \]
+
+%     \item \textbf{Theorem 5.26} \\
+%         If $f$ is (Riemann) integrable on $[a, b]$, then $F(x) = \int_a^x f(t)\, \mathrm{d}t$
+%         exists and is continuous on $[a, b]$.
+
+%     \item \textbf{Theorem 5.27} \emph{Second Mean Value Theorem for Integrals} \\
+%         Suppose that $f, g$ are integrable on $[a, b]$, that $g$ is nonnegative on $[a, b]$,
+%         and that $m, M$ are real numbers which satisfy $m \leq \inf f([a, b])$
+%         and $M \geq \sup f([a, b])$.
+%         Then there is a $c \in [a, b]$ such that
+%         \[
+%             \int_a^b f(x) g(x)\, \mathrm{d}x =
+%             m\int_a^c g(x)\, \mathrm{d}x + M\int_c^b g(x)\, \mathrm{d}x.
+%         \]
+%         In particular, if $f$ is also nonnegative on $[a, b]$, then there is a
+%         $c \in [a, b]$ which satisfies
+%         \[
+%             \int_a^b f(x)g(x)\, \mathrm{d}x = M\int_c^b g(x)\, \mathrm{d}x.
+%         \]
+% \end{itemize}
+
+% \subsection{The Fundamental Theorem of Calculus}
+
+% \begin{itemize}
+
+%     \item \textbf{Theorem 5.28} \emph{Fundamental Theorem of Calculus} \\
+%         Let $[a, b]$ be nondegenerate and suppose that $f : [a, b] \to \mathbb{R}$.
+%         \begin{enumerate}
+%             \item If $f$ is continuous on $[a, b]$ and $F(x) = \int_a^x f(t)\, \mathrm{d}t$,
+%                 \[
+%                     \frac{\mathrm{d}}{\mathrm{d}x} \int_a^x f(t)\, \mathrm{d}t := F'(x) = f(x)
+%                 \]
+%                 for each $x \in [a, b]$.
+
+%             \item If $f$ is differentiable on $[a, b]$ and $f'$ is integrable on $[a, b]$, then
+%                 then $F \in \mathcal{C}^1[a, b]$ and
+%                 \[
+%                     \int_a^x f'(t)\, \mathrm{d}t = f(x) - f(a)
+%                 \]
+%                 for each $x \in [a, b]$.
+%         \end{enumerate}
+%     \item \textbf{Remark 5.29}
+%         The hypotheses of the Fundamental Theorem of Calculus cannot be relaxed.
+
+%     \item \textbf{Theorem 5.31} \emph{Integration by Parts} \\
+%         Suppose that $f, g$ are differentiable on $[a, b]$ with $f', g'$ integrable on
+%         $[a, b]$.
+%         Then
+%         \[
+%             \int_a^b f'(x)g(x)\, \mathrm{d}x =
+%             f(b)g(b) - f(a)g(a) - \int_a^b f(x)g'(x)\, \mathrm{d}x
+%         \]
+
+%     \item \textbf{Theorem 5.34} \emph{Change of Variables} \\
+%         Let $\phi$ be continuously differentiable on a closed, nondegenerate interval $[a, b]$.
+%         If
+%         \[
+%             \phi' \ \text{is nonzero on} \ [a, b]
+%         \]
+%         and if
+%         \[
+%             f \ \text{is integrable on} \ [c, d] := \phi[a, b],
+%         \]
+%         then $f \circ \phi \cdot |\phi'|$ is integrable on $[a, b]$, and
+%         \[
+%             \int_c^d f(t)\, \mathrm{d}t = \int_a^b f(\phi(x)) \cdot |\phi'(x)|\, \mathrm{d}x.
+%         \]
+
+% \end{itemize}
+
+\section{Riemann Integration}
+
+\subsection{Introduction}
+
+\subsection{Step functions and their integrals}
+
+\begin{itemize}
+    \item \textbf{Definition 1} \emph{Step function} \\
+        We say that $\phi : \mathbb{R} \to \mathbb{R}$ is a \emph{step function} if there
+        exist real numbers $x_0 < x_1 < \cdots < x_n$ (for some $n \in \mathbb{N}$) such that
+        \begin{enumerate}
+            \item $\phi(x) = 0$ for $x < x_0$ and $x > x_n$
+            \item $\phi$ is constant on $(x_{j-1}, x_j) 1 \leq j \leq n$.
+        \end{enumerate}
+
+    \item \textbf{Definition 2} \\
+        If $\phi$ is a steup function with respect to $\{x_0, x_1, \ldots, x_n\}$
+        which takes the value $c_j$ on $(x_{j-1}, x_j)$, then
+        \[
+            \int \phi := \sum_{j=1}^n c_j (x_j - x_{j-1})
+        \]
+
+    \item \textbf{Proposition 1} \\
+        If $\phi$ and $\psi$ are step functions and $\alpha$ and $\beta \in \mathbb{R}$, then
+        \[
+            \int(\alpha \phi + \beta \psi) = \alpha \int \phi + \beta \int \psi.
+        \]
+
+\end{itemize}
+
+\subsection{Riemann-integrable functions and their integrals}
+
+\begin{itemize}
+    \item \textbf{Definition 3} \emph{Riemann-integrable} \\
+        Let $f : \mathbb{R} \t0 \mathbb{R}$.
+        We say that $f$ is \emph{Riemann-integrable} if for every $\epsilon > 0$
+        there exist step functions $\phi$ and $\psi$ such that
+        \[
+            \phi \leq f \leq \psi
+        \]
+        and
+        \[
+            \int \psi - \int \phi < \epsilon
+        \]
+
+    \item \textbf{Theorem 1} \\
+        A function $f : \mathbb{R} \to \mathbb{R}$ is Riemann-integrable if and only if
+        \[
+            \sup \{ \int \phi : \phi \ \text{is a step function and} \ \phi \leq f \} =
+            \inf \{ \int \psi : \psi \ \text{is a step function and} \ \psi \geq f \}.
+        \]
+
+    \item \textbf{Definition 4} \\
+        If $f$ is Riemann-integrable we define its integral $\int f$ as the common value
+        \[
+            \int f := \sup \{ \int \phi : \phi \ \text{is a step function and} \ \phi \leq f \}
+            = \inf \{ \int \psi : \psi \ \text{is a step function and} \psi \geq f \}.
+        \]
+
+    \item \textbf{Theorem 2} \\
+        A function $f : \mathbb{R} \to \mathbb{R}$ is Riemann-integrable if and only if there
+        exist sequences of step functions $\phi_n$ and $\psi_n$ such that
+        \[
+            \phi_n \leq f \leq \psi_n \ \forall n, \quad \text{and} \quad
+            \int \psi_n - \int \phi_n \to 0
+        \]
+        If $\phi_n$ and $\psi_n$ are any sequences of step functions satisfying above, then
+        \[
+            \int \phi_n \to \int f \ \text{and} \ \int \psi_n \to \int f
+        \]
+        as $n \to \infty$.
+
+    \item \textbf{Lemma 1} \\
+        Let $f : \mathbb{R} \to \mathbb{R}$ be a bounded function with bounded support
+        $[a, b]$.
+        The following are equivalent:
+        \begin{enumerate}
+            \item $f$ is Riemann-integrable.
+            \item for every $\epsilon > 0$ there exist $a = x_0 < \cdots < x_n = b$ such that,
+                if $M_j$ and $m_j$ denote the supremum and infimum values of$f$ on
+                $[x_{j-1}, x_j]$ respectively, then
+                \[
+                    \sum_{j-1}^n (M_j - m_j) (x_j - x_{j-1}) < \epsilon
+                \]
+            \item for every $\epsilon > 0$ there exist $a = x_0 < \cdots < x_n = b$
+                such that, with $I_j = (x_{j-1}, x_j)$ for $j \geq 1$,
+                \[
+                    \sum_{j=1}^n \sup_{x, y, \in I_j} |f(x) - f(y)| |I_j| < \epsilon.
+                \]
+                For $f : \mathbb{R} \to \mathbb{R}$ a bounded function with bounded support
+                $[a, b]$ and for $a = x_0 < \cdots < x_n = b$,
+                let $I_j = (x_{j-1}, x_j), m_j := \inf_{x \in I_j} f(x)$ and
+                $M_j := \sup_{x \in I_j} f(x)$.
+                Define the \emph{lower step function of $f$ with respect to
+                $\{x_0, \ldots, x_n\}$} as
+                \[
+                    \phi_*(x) = \sum_{j=1}^n m_j \chi_{I_j} + \sum_{j=0}^n \chi_{x_j}
+                \]
+                and the \emph{upper step function of $f$ with respect to
+                $\{x_0, \ldots, x_n\}$} as
+                \[
+                    \phi^*(x) = \sum_{j=1}^n M_j \chi_{I_j} + \sum_{j=0}^n \chi_{x_j}
+                \]
+                Note that $\phi_*$ and $\phi^*$ are step functions, and that
+                $\phi_* \leq f \geq \phi^*$.
+
+        \end{enumerate}
+
+    \item \textbf{Theorem 3} \\
+        Suppose $f$ and $g$ are Riemann-integrable and $\alpha$ and $\beta$ are real numbers.
+        Then
+        \begin{enumerate}
+            \item $\alpha f + \beta g$ is Riemann-integrable and
+                \[
+                    \int(\alpha f + \beta g) = \alpha \int f + \beta \int g
+                \]
+
+            \item If $f \geq 0$ then $\int f \geq 0$; if $f \leq g$ then $\int f \leq \int g$.
+            \item $|f|$ is Riemann-integrable and $| \int f| \leq \int |f|$
+            \item $\max \{f, g\}$ and $\min \{f, g\}$ are Riemann-integrable.
+            \item $fg$ is Riemann-integrable.
+        \end{enumerate}
+
+    \item \textbf{Theorem 4} \\
+        If $g : [a, b] \to \mathbb{R}$ is continuous, and $f$ defined by $f(x) = g(x)$
+        for $a \leq x \leq b$, $f(x) = 0$ for $x \notin [a, b]$ then $f$ is Riemann-integrable.
+\end{itemize}
+
+\subsection{Fundamental Theorem of Calculus, and Practical Integration}
+
+\begin{itemize}
+    \item \textbf{Theorem 5} \\
+        Let $g : [a, b] \to \mathbb{R}$ be Riemann-integrable.
+        For $a \leq x \leq b$ let $G(x) = \int_a^x g$.
+        Suppose $g$ is continuous at $x$ for some $x \in [a, b]$.
+        [If $x$ is an endpoint, we mean one-sided continuous.]
+        Then $G$ is differentiable at $x$ and $G'(x) = g(x)$.
+        [If $x$ is an endpoint, we mean one-sided differentiable.]
+
+    \item \textbf{Theorem 6} \\
+        Suppose $f : [a, b] \to \mathbb{R}$ has continuous derivative $f'$ on $[a, b]$.
+        Then
+        \[
+            \int_a^b f' = f(b) - f(a).
+        \]
+
+\end{itemize}
+
+\subsection{Integrals and uniform limits of sequences and series of functions}
+
+\begin{itemize}
+
+    \item \textbf{Theorem 7} \\
+        Suppose that $f_n : \mathbb{R} \to \mathbb{R}$ is a sequence if Riemann-integrable
+        functions which converges uniformly to a function $f$.
+        Suppose that $f_n$ and $f$ are zero outside some common interval $[a, b]$.
+        Then $f$ is Riemann-integrable and
+        \[
+            \int f = \lim_{n \to \infty} \int f_n.
+        \]
+
+\end{itemize}
+
+\subsection{A couple of odds and ends}
+
+\begin{itemize}
+    \item \textbf{Improper integrals}
+    \item \textbf{Integral test}
+\end{itemize}
+
+\break{}
+
+\section{Infinite Series of Real Numbers}
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+    \item \textbf{Definition 6.1} \emph{Partial sum} \\
+        Let $S = \sum_{k=1}^\infty a_k$ be an infinite series with terms $a_k$.
+        \begin{enumerate}
+            \item For each $n \in \mathbb{N}$, the \emph{partial sum of $S$ of order $n$}
+                is defined by
+                \[
+                    s_n := \sum_{k=1}^n a_k
+                \]
+
+            \item $S$ is said to \emph{converge} if and only if its sequence of partial sums
+                $\{s_n\}$ converges to some $s \in \mathbb{R}$ as $n \to \infty$;
+                that is, if and only if for every $\epsilon > 0$ there is an
+                $N \in \mathbb{N}$ such that $n \geq N \implies |s_n - s| < \epsilon$.
+                In this case we shall write
+                \[
+                    \sum_{k=1}^\infty a_k = s
+                \]
+                and call $s$ the \emph{sum}, or \emph{value}, of the series
+                $\sum_{k=1}^\infty a_k$
+
+            \item $S$ is said to \emph{diverge} if and only if its sequence of partial sums
+                $\{s_n\}$ does not converge as $n \to \infty$.
+            When $s_n$ diverges to $+\infty$ as $n \to \infty$, we shall also write
+                \[
+                    \sum_{k=1}^\infty a_k = s
+                \]
+        \end{enumerate}
+
+    \item \textbf{Theorem 6.5} \emph{Divergence Test}
+        Let ${\{a_k\}}_{k \in \mathbb{N}}$ be a sequence of real numbers.
+        If $a_k$ does not converge to zero, then the series $\sum_{k=1}^\infty a_k$ diverges.
+
+    \item \textbf{Theorem 6.6} \emph{Telescoping Series} \\
+        If $\{a_k\}$ is a convergent real sequence, then
+        \[
+            sum_{k=1}^\infty (a_k - a_{k+1}) = a_1 - \lim_{k \to \infty} a_k
+        \]
+
+    \item \textbf{Theorem 6.7} \emph{Geometric Series} \\
+        Suppose that $x \in \mathbb{R}$, that $N \in \{ 0, 1, \ldots\}$, and that $0^0$
+        is interpreted to be $1$.
+        Then the series $\sum_{k=N}^\infty x^k$ converges if and only if $|x| < 1$,
+        in which case
+        \[
+            \sum_{k=N}^\infty x^k = \frac{x^N}{1-x}
+        \]
+        In particular,
+        \[
+            \sum_{k=0}^\infty x^k = \frac{1}{1-x}, \quad |x| < 1.
+        \]
+
+    \item \textbf{Theorem 6.8} \emph{The Cauchy Criterion} \\
+        Let $\{a_k\}$ be a real sequence.
+        Then the infinite series $\sum_{k=1}^\infty a_k$ converges if and only if for every
+        $\epsilon > 0$ there is an $N \in \mathbb{N}$ such that
+        \[
+            m \geq n \geq N \implies \left| \sum_{k=n}^n a_k \right| < \epsilon
+        \]
+
+    \item \textbf{Corollary 6.9} \\
+        Let $\{a_k\}$ be a real sequence.
+        Then the infinite series $\sum_{k=1}^\infty a_k$ converges if and only if given
+        $\epsilon > 0$ there is an $N \in \mathbb{N}$ such that
+        \[
+            n \geq N \implies \left| \sum_{k=n}^\infty a_k \right| < \epsilon
+        \]
+
+    \item \textbf{Theorem 6.10} \\
+        Let $\{a_k\}$ and $\{b_k\}$ be real sequences.
+        If $\sum_{k=1}^\infty a_k$ and $\sum_{k=1}^\infty b_k$ are convergent series, then
+        \[
+            \sum_{i=1}^\infty (a_k + b_k) = \sum_{k=1}^\infty a_k + \sum_{k=1}^\infty b_k
+        \]
+        and
+        \[
+            \sum_{k=1}^\infty (\alpha a_k) = \alpha \sum_{k=1}^\infty a_k
+        \]
+        for any $\alpha \in \mathbb{R}$.
+\end{itemize}
+
+\subsection{Series with Nonnegative Terms}
+
+\begin{itemize}
+    \item \textbf{Theorem 6.11} \\
+        Suppose that $a_k \geq 0$ for large $k$.
+        Then $\sum_{k=1}^\infty a_k$ converges if and only if its sequence of partial sums
+        $\{s_n\}$ is bounded; that is, if and only if there exists a finite number $M > 0$
+        such that
+        \[
+            \left| \sum_{i=1}^n a_k \right| \leq M \ \forall n \in \mathbb{N}
+        \]
+
+    \item \textbf{Theorem 6.12} \emph{Integral Test} \\
+        Suppose that $f : [1, \infty) \to \mathbb{R}$ is positive and decreasing on
+        $[1, \infty)$.
+        Then $\sum_{k=1}^\infty f(k)$ converges if and only if $f$ is improperly integrable
+        on $[1, \infty)$; that is if and only if
+        \[
+            \int_1^\infty f(x)\, \mathrm{d}x < \infty
+        \]
+
+    \item \textbf{Corollary 6.13} \emph{$p$-Series Test}
+        The series
+        \[
+            \sum_{i=1}^\infty \frac{1}{k^p}
+        \]
+        converges if and only if $p > 1$.
+
+    \item \textbf{Theorem 6.14} \emph{Comparison Test} \\
+        Suppose that $0 \leq a_k \leq b_k$ for large $k$.
+        \begin{enumerate}
+            \item If $\sum_{k=1}^\infty b_k < \infty$, then $\sum_{k=1}^\infty a_k < \infty$.
+            \item If $\sum_{k=1}^\infty b_k = \infty$, then $\sum_{k=1}^\infty a_k = \infty$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 6.16} \emph{Limit Comparison Test} \\
+        Suppose that $a_k \geq 0$, that $b_k > 0$ for large $k$, and that
+        $L := \lim_{n \to \infty} \frac{a_n}{b_n}$ exists as an extended real number.
+        \begin{enumerate}
+            \item If $0 < L < \infty$, then $\sum_{k=1}^\infty a_k$ converges if and only if
+                $\sum_{k=1}^\infty b_k$ converges.
+            \item If $L = 0$ and $\sum_{k=1}^\infty b_k$ converges then
+                $\sum_{k=1}^\infty a_k$ converges.
+            \item If $L = \infty$ and $\sum_{k=1}^\infty b_k$ diverges then
+                $\sum_{k=1}^\infty a_k$ diverges.
+        \end{enumerate}
+
+\end{itemize}
+
+\subsection{Absolute Convergence}
+
+\begin{itemize}
+    \item \textbf{Definition 6.18} \emph{Absolute \& Conditional Convergence} \\
+        Let $S = \sum_{k=1}^\infty a_k$ be an infinite series.
+        \begin{enumerate}
+            \item $S$ is said to \emph{converge absolutely} if and only if
+                $\sum_{k=1}^\infty |a_k| < \infty$
+            \item $S$ is said to \emph{converge conditionally} if and only if $S$ converges
+                but not absolutely.
+        \end{enumerate}
+
+    \item \textbf{Remark 6.19} \\
+        A series $\sum_{k=1}^\infty a_k$ converges absolutely if and only if for every
+        $\epsilon > 0$ there is an $N \in \mathbb{N}$ such that
+        \[
+            m > n \geq N \implies \sum_{k=1}^\infty |a_k| < \epsilon
+        \]
+
+    \item \textbf{Remark 6.20} \\
+        If $\sum_{k=1}^\infty a_k$ converges absolutely, then $\sum_{k=1}^\infty a_k$
+        converges, but not conversely.
+        In particular, there exist conditionally convergent series.
+
+    \item \textbf{Definition 6.21} \emph{Limit supremum} \\
+        The \emph{limit supremum} of a sequence of real numbers $\{x_k\}$ is defined to be
+        \[
+            \limsup_{k \to \infty} x_k := \lim_{n \to \infty} \left( \sup_{k>n} x_k \right).
+        \]
+
+    \item \textbf{Remark 6.22} \\
+        Let $x \in \mathbb{R}$ and $\{x_k\}$ be a real sequence.
+        \begin{enumerate}
+            \item If $\limsup_{k \to \infty} x_k < x$, then $x_k < x$ for large $k$.
+            \item If $\limsup_{k \to \infty} x_k > x$, then $x_k > x$ for infinitely many $k$s.
+            \item If $x_k \to x$ as $x \to \infty$, then $\limsup_{k \to \infty} x_k = x$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 6.23} \emph{Root Test} \\
+        Let $a_k \in \mathbb{R}$ and $r := \limsup_{k \to \infty} |a_k|^{\frac{1}{k}}$.
+        \begin{enumerate}
+            \item If $r < 1$, then $\sum_{k=1}^\infty a_k$ converges absolutely.
+            \item If $r > 1$, then $\sum_{k=1}^\infty a_k$ diverges.
+        \end{enumerate}
+
+    \item \textbf{Theorem 6.24} \emph{Ratio test} \\
+        Let $a_k \in \mathbb{R}$ with $a_k \neq 0$ for large $k$ and suppose that
+        \[
+            r = \lim_{k \to \infty} \frac{|a_{k+1}|}{|a_k|}
+        \]
+        exists as an extended real number.
+        \begin{enumerate}
+            \item If $r < 1$, then $\sum_{k=1}^\infty a_k$ converges absolutely.
+            \item If $r > 1$, then $\sum_{k=1}^\infty a_k$ diverges.
+        \end{enumerate}
+
+    \item \textbf{Remark 6.25}
+        The Root and Ratio tests are inconclusive when $r = 1$.
+
+    \item \textbf{Definition 6.26} \emph{Rearrangement} \\
+        A series $\sum_{j=1}^\infty b_j$ is called a \emph{rearrangement} of a series
+        $\sum_{k=1}^\infty a_k$ if and only if there is an injection
+        $f : \mathbb{N} \to \mathbb{N}$ such that
+        \[
+            b_{f(k)} = a_k, \quad k \in \mathbb{N}
+        \]
+
+    \item \textbf{Theorem 6.27} \\
+        If $\sum_{k=1}^\infty a_k$ converges absolutely and $\sum_{j=1}^\infty b_j$
+        is any rearrangement of $\sum_{k=1}^\infty a_k$, then $\sum_{j=1}^\infty b_j$
+        converges and
+        \[
+            \sum_{k=1}^\infty a_k = \sum_{j=1}^\infty b_j
+        \]
+
+    \item \textbf{Lemma 6.28}
+    \item \textbf{Theorem 6.29} \emph{Riemann}
+
+\end{itemize}
+
+\subsection{Alternating Series}
+
+\begin{itemize}
+    \item \textbf{Theorem 6.30} \emph{Abel's Formula} \\
+        Let ${\{a_k\}}_{k \in \mathbb{N}}$ and ${\{b_k\}}_{k \in \mathbb{N}}$ be real
+        sequences, and for each pair of integers $n \geq m \geq 1$ set
+        \[
+            A_{n, m} := \sum_{k=m}^n a_k
+        \]
+        Then
+        \[
+            \sum_{k=m}^n a_k b_k = A_{n, m} b_n - \sum_{k=m}^{n-1} A_{k, m} (b_{k+1} - b_k)
+        \]
+        for all integers $n > m \geq 1$.
+
+    \item \textbf{Theorem 6.31} \emph{Dirichlet's Test} \\
+        Let $a_k, b_k \in \mathbb{R}$ for $k \in \mathbb{N}$.
+        If the sequence of partial sums $s_n = \sum_{k=1}^n a_k$ is bounded an
+        $b_k \downarrow 0$ as $k \to \infty$, then $\sum_{k=1}^\infty a_k b_k$ converges.
+
+    \item \textbf{Corollary 6.32} \emph{Alternating Series Test} \\
+        If $a_k \downarrow 0$ as $k \to \infty$, then
+        \[
+            \sum_{k=1}^\infty (-1)^k a_k
+        \]
+        converges.
+
+\end{itemize}
+
+\break{}
+
+\section{Infinite Series of Functions}
 
 \end{document}
