@@ -1050,4 +1050,224 @@
         \]
 \end{itemize}
 
+\break{}
+
+\section{Differentiability on \mathbb{R}}
+
+\subsection{The Derivative}
+
+\begin{itemize}
+
+    \item \textbf{Definition 4.1} \emph{Differentiable} \\
+        A real function $f$ is said to be \emph{differentiable} at a point $a \in \mathbb{R}$
+        if and only if $f$ is defined on some open interval $I$ containing $a$ and
+        \[
+            f'(a) := \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+        \]
+        exists.
+        In this case $f'(a)$ is called the \emph{derivative} of $f$ at $a$.
+
+    \item \textbf{Theorem 4.2} \\
+        A real function $f$ is differentiable at some point $a \in \mathbb{R}$ if and only if
+        there exist an open interval $I$ and a function $F : I \to \mathbb{R}$ such that
+        $a \in I$, $f$ is defined on $I$, $F$ is continuous at $a$, and
+        \[
+            f(x) = F(x) (x-a) + f(a)
+        \]
+        holds for all $x \in I$ in which case $F(a) = f'(a)$.
+
+    \item \textbf{Theorem 4.3} \\
+        A real function $f$ is differentiable at $a$ if and only if there is a function
+        $T$ of the form $T(x) := m(x)$ such that
+        \[
+            \lim_{h \to 0} \frac{f(a+h) - f(a) - t(h)}{h} = 0
+        \]
+
+    \item \textbf{Theorem 4.4} \\
+        If $f$ is differentiable at $a$, then $f$ is continuous at $a$.
+
+    \item \textbf{Definition 4.6} \emph{Continuously differentiable} \\
+        Let $I$ be a nondegenerate interval.
+        \begin{enumerate}
+            \item A function $f : I \to \mathbb{R}$ is said to be \emph{differentiable}
+                on $I$ if and only if
+                \[
+                    f_i'(a) := \lim_{x \to a; x \in I} \frac{f(x) - f(a)}{x-a}
+                \]
+                exists and is finite for every $a \in I$.
+            \item $f$ is said to be \emph{continuously differentiable} on $I$ if and only if
+                $f_I'$ exists and is continuous on $I$.
+        \end{enumerate}
+
+    \item \textbf{Remark 4.9} \\
+        $f(x) = |x|$ is differentiable on $[0, 1]$ and on $[-1, 0]$ but not on $[-1, 1]$.
+
+\end{itemize}
+
+\subsection{Differentiability Theorems}
+
+\begin{itemize}
+    \item \textbf{Theorem 4.10} \\
+        Let $f$ and $g$ be real functions and $\alpha \in \mathbb{R}$.
+        If $f$ and $g$ are differentiable at $a$, then $f+g$, $\alpha f$, $f \cdot g$,
+        and [when $g(a) \neq 0$] $f/g$ are all differentiable at a.
+        In fact,
+        \begin{align*}{}
+            (f+g)'(a) &= f'(a) + g'(a) \\
+            (\alpha f)'(a) &= \alpha f'(a) \\
+            (f \cdot g)'(a) &= g(a) g'(a) + f(a) g'(a) \\
+            \left( \frac{f}{g}\right)'(a) &= \frac{g(a) f'(a) - f(a) g'(a)}{g^2(a)} \\
+        \end{align*}
+
+    \item \textbf{Theorem 4.11} \emph{Chain Rule} \\
+        Let $f$ and $g$ be real functions.
+        If $f$ is differentiable at $a$ and $g$ is differentiable at $f(a)$, then
+        $g \circ f$ is differentiable at $a$ with
+        \[
+            (g \circ f)'(a) = g'(f(a))f'(a)
+        \]
+
+\end{itemize}
+
+\subsection{Mean Value Theorem}
+
+\begin{itemize}
+
+    \item \textbf{Lemma 4.12} \emph{Rolle's Theorem} \\
+        Suppose that $a, b \in \mathbb{R}$ with $a < b$.
+        If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and if $f(a) = f(b)$,
+        then $f'(c) = 0$ for some $c \in (a, b)$.
+
+    \item \textbf{Remark 4.13} \\
+        The continuity hypothesis on Rolle's Theorem cannot be relaxed at even one point
+        in $[a, b]$.
+
+    \item \textbf{Remark 4.14} \\
+        The differentiability hypothesis on Rolle's Theorem cannot be relaxed at even one point
+        in $[a, b]$.
+
+    \item \textbf{Theorem 4.15} \\
+        Suppose that $a, b, \in \mathbb{R}$ with $a<b$.
+        \begin{enumerate}
+            \item \emph{Generalised Mean Value Theorem}:
+                If $f$, $g$ are continuous on $[a, b]$ and differentiable on $(a, b)$,
+                then there is a $c \in (a, b)$ such that
+                \[
+                    g'(c) (f(b) - f(a)) = f'(c) (g(b) - g(a))
+                \]
+
+            \item \emph{Mean Value Theorem}:
+                If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there
+                is a $c \in (a, b)$ such that
+                \[
+                    f(b) - f(a) = f'(c)(b-A)
+                \]
+
+        \end{enumerate}
+
+    \item \textbf{Definition 4.16} \emph{Increasing, Monotone, Decreasing} \\
+        Let $E$ be a nonempty subset of $\mathbb{R}$ and $f : E \to \mathbb{R}$.
+        \begin{enumerate}
+            \item $f$ is said to be \emph{increasing}
+                (respectively, \emph{strictly increasing}) on $E$ if and only if
+                $x_1, x_2 \in E$ and $x_1 < x_2 \implies f(x_1) \leq f(x_2)$
+                [respectively, $f(x_1) < f(x_2)$].
+            \item $f$ is said to be \emph{decreasing}
+                (respectively, \emph{strictly decreasing}) on $E$ if and only if
+                $x_1, x_2 \in E$ and $x_1 < x_2 \implies f(x_1) \geq f(x_2)$
+                [respectively, $f(x_1) > f(x_2)$].
+            \item $f$ is said to be \emph{monotone} (respectively, \emph{strictly monotone})
+                on $E$ if and only if $f$ is either decreasing or increasing
+                (respectively, either strictly decreasing or strictly increasing) on $E$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 4.17} \\
+        Suppose that $a, b \in \mathbb{R}$, with $a<b$, that $f$ is continuous on $[a, b]$,
+        and that $f$ is differentiable on $(a, b)$.
+        \begin{enumerate}
+            \item If $f'(x) > 0$ [respectively $f'(x) < 0$] for all $x \in (a, b)$,
+                then $f$ is strictly increasing (respectively, strictly decreasing) on
+                $[a, b]$.
+            \item If $f'(x) = 0$ for all $x \in (a, b)$, then $f$ is constant on $[a, b]$.
+            \item If $g$ is continuous on $[a, b]$ and differentiable on $(a, b)$,
+                and if $f'(x) = g'(x)$ for all $x \in (a, b)$, then $f-g$ is constant on
+                $[a, b]$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 4.18} \\
+        Suppose that $f$ is increasing on $[a, b]$
+        \begin{enumerate}
+            \item If $c \in [a, b)$, then $f(c+)$ exists and $f(c) \leq f(c+)$.
+            \item If $c \in (a, b]$, then $f(c-)$ exists and $f(c-) \leq f(c)$.
+        \end{enumerate}
+
+    \item \textbf{Theorem 4.19} \\
+        If $f$ is monotone on an interval $I$, then $f$ has at most countable many points
+        of discontinuity on $I$.
+
+    \item \textbf{Theorem 4.21} \emph{Bernoulli's Inequality} \\
+        Let $\alpha$ be a positive real number.
+        If $0 < \alpha < 1$, then
+        ${(1+x)}^\alpha \leq 1 + \alpha x \ \forall x \in [-1, \infty)$,
+        and if $\alpha \geq 1$, then
+        ${(1+x)}^\alpha \geq 1 + \alpha x \ \forall x \in [-1, \infty)$.
+
+    \item \textbf{Theorem 4.23} \emph{Intermediate Value Theorem for Derivatives} \\
+        Suppose that $f$ is differentiable on $[a, b]$ with $f'(a) \neq f'(b)$.
+        If $y_0$ is a real number which lies between $f'(a)$ and $f'(b)$,
+        then there is an $x_0 \in (a, b)$ such that $f'(x_0) = y_0$.
+\end{itemize}
+
+\subsection{Taylor's Theorem and L'Hopital's Rule}
+
+\begin{itemize}
+
+    \item \textbf{Theorem 4.24} \emph{Taylor's Formula} \\
+        Let $n \in \mathbb{N}$ and let $a, b$ be extended real numbers with $a<b$.
+        If $f : (a, b) \to \mathbb{R}$, and if $f^{(n+1)}$ exists on $(a, b)$,
+        then for each pair of points $(x, x_0 \in (a, b)$ there is a number $c$
+        between $x$ and $x_0$ such that
+        \[
+            f(x) = f(x_0) + \sum_{k=1}^n \frac{f^{(k)} (x_0)}{k!}(x-x_0)^k +
+            \frac{f^{(n+1)}(c)}{(n+1)!} (x-x_0)^{n+1}
+        \]
+
+    \item \textbf{Theorem 4.27} \emph{L'Hopital's Rule} \\
+        Let $a$ be an extended real number and $I$ be an open interval which either contains
+        $a$ or has $a$ as an endpoint.
+        Suppose that $f$ and $g$ are differentiable on $I \setminus \{a\}$ and that
+        $g(x) \neq 0 \neq g'(x) \ \forall x \in I \setminus \{a\}$.
+        Suppose further that
+        \[
+            A := \lim_{x \to a; x \in I} f(x) = \lim_{x \to a; x \in I} g(x)
+        \]
+        is either $0$ or $\infty$.
+        If
+        \[
+            B := \lim_{x \to a; x \in I} \frac{f'(x)}{g'(x)}
+        \]
+        exists as an extended real number, then
+        \[
+            \lim_{x \to a; x \in I} \frac{f(x)}{g(x)} =
+            \lim_{x \to a; x \in I} \frac{f'(x)}{g'(x)}
+        \]
+
+\end{itemize}
+
+\subsection{Inverse Function Theorems}
+
+\begin{itemize}
+
+    \item \textbf{Theorem 4.32} \\
+        Let $I$ be a nondegenerate interval and suppose that $f : I \to \mathbb{R}$ is
+        injective.
+        If $f$ is continuous on $I$, then $J := f(I)$ is an interval, $f$ is strictly
+        monotone on $I$, and $f^{-1}$ is continuous and strictly monotone on $J$.
+
+    \item \textbf{Theorem 4.33} \emph{Inverse Function Theorem} \\
+        Let $I$ be an open interval and $f : I \to \mathbb{R}$ be injective and continuous.
+        If $b = f(a)$ for some $a \in I$ and if $f'(a)$ exists and is nonzero,
+        then $f^{-1}$ is differentiable at $b$ and $(f^{-1})'(b) = \frac{1}{f'(a)}$.
+\end{itemize}<++>
+
 \end{document}
