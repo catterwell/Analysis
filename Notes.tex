@@ -45,32 +45,25 @@
         \begin{itemize}
             \item \emph{Closure Properties}:
                 $a + b, \ a \cdot b \in \mathbb{R}$
-
             \item \emph{Associative Properties}:
                 $a + (b + c) = (a + b) + c$ and
                 $a \cdot (b \cdot c) = (a \cdot b) \cdot c$
-
             \item \emph{Commutative Properties}:
                 $a + b = b + a$ and $a \cdot b = b \cdot a$
-
             \item \emph{Distributive Law}:
                 $a \cdot (b + c) = a \cdot b + a \cdot c$
-
             \item \emph{Existence of Additive Identity}:
                 There is a unique element $0 \in \mathbb{R}$ such that
                 $0 + a = a$ for all $a \in \mathbb{R}$
-
             \item \emph{Existence of Multiplicative Identity}:
                 There is a unique element $1 \in \mathbb{R}$ such that
                 $1 \neq 0$ and $1 \cdot a = a$ for all $a \in \mathbb{R}$
-
             \item \emph{Existence of Additive Inverses}:
                 For every $x \in \mathbb{R}$ there is a unique element $-x \in \mathbb{R}$
                 such that
                 \[
                     x + (-x) = 0
                 \]
-
             \item \emph{Existence of Multiplicative Inverses}:
                 For every $x \in \mathbb{R} \setminus \{0\}$ there is a unique element
                 $x^{-1} \in \mathbb{R}$ such that
@@ -88,21 +81,18 @@
                 \[
                     a < b, \ b < a, \ \text{or} \ a = b
                 \]
-
             \item \emph{Transitive Property}:
-                For $a, b, c, \in \mathbb{R}$
+                For $a, b, c \in \mathbb{R}$
                 \[
-                    a < b \ \text{and} \b < c \implies a < c
+                    a < b \ \text{and} \ b < c \implies a < c
                 \]
-
             \item \emph{Additive Property}:
                 For $a, b, c \in \mathbb{R}$
                 \[
                     a < b \ \text{and} \ c \in \mathbb{R} \implies a + c < b + c
                 \]
-
             \item \emph{Multiplicative Properties}:
-                For $a, b, c, \in \mathbb{R}$
+                For $a, b, c \in \mathbb{R}$
                 \[
                     a < b \ \text{and} \ c > 0 \implies ac < bc
                 \]
@@ -111,7 +101,6 @@
                     a < b \ \text{and} \ c < 0 \implies bc < ac
                 \]
         \end{itemize}
-
     \item \textbf{Remark 1.1} \\
         We will assume that the sets $\mathbb{N}$ and $\mathbb{Z}$ satisfy the following
         properties:
@@ -120,7 +109,6 @@
             \item If $n \in \mathbb{Z}$, then $n \in \mathbb{N}$ if and only if $n \geq 1$
             \item There is no $n \in \mathbb{Z}$ that satisfies $0 < n < 1$
         \end{enumerate}
-
     \item \textbf{Definition 1.4} \emph{Absolute Value} \\
         The \emph{absolute value} of a number $a \in \mathbb{R}$ is the number
         \[
@@ -130,14 +118,11 @@
                 -a & a < 0 \\
             \end{cases}
         \]
-
     \item \textbf{Remark 1.5} The \emph{absolute value} is multiplicative;
         that is, $|ab| = |a||b| \ \forall a, b, \in \mathbb{R}$
-
     \item \textbf{Theorem 1.6} \emph{Fundamental Theorem of Absolute Values} \\
         Let $a \in \mathbb{R}$ and $M \geq 0$.
         Then $|a| \leq M \iff -M \leq a \leq M$.
-
     \item \textbf{Theorem 1.7} The absolute value satisfies the following three properties:
         \begin{enumerate}
             \item \emph{Positive Definite}:
@@ -151,14 +136,12 @@
                     \quad \left| |a| - |b| \right| \leq |a - b|
                 \]
         \end{enumerate}
-
     \item \textbf{Theorem 1.9} Let $x, y, a \in \mathbb{R}$
         \begin{enumerate}
             \item $x < y + \epsilon \ \forall \epsilon > 0 \iff x \leq y$
             \item $x > y - \epsilon \ \forall \epsilon > 0 \iff x \geq y$
             \item $|a| < \epsilon \ \forall \epsilon > 0 \iff a = 0$
         \end{enumerate}
-
 \end{itemize}
 
 \subsection{Completeness Axiom}
@@ -172,41 +155,33 @@
                 in which case $M$ is called an \emph{upper bound} of $E$.
             \item A number $s$ is called a \emph{supremum} of the set $E$ if and only if $s$
                 is an upper bound of $E$ and $s \leq M$ for all upper bounds $M$ of $E$.
-                (In this case we shall say that $E$ has a \emph{finite supremeum} $s$ and write
-                $s = \sup E$)
+                (In this case we shall say that $E$ has a \emph{finite supremum} $s$ and write
+                $s = \sup E$.)
         \end{enumerate}
-
     \item \textbf{Remark 1.12}
         If a set has one upper bound, it has infinitely many upper bounds.
-
     \item \textbf{Remark 1.13}
         If a set has a supremum, then it has only one supremum.
-
     \item \textbf{Theorem} \emph{Approximation Property for Suprema} \\
         If $E$ has a finite supremum and $\epsilon > 0$ is any positive number, then there is a
         point $a \in E$ such that
         \[
             \sup E - \epsilon < a \leq \sup E
         \]
-
     \item \textbf{Theorem 1.15} \\
         If $E \subset \mathbb{Z}$ has a supremum, then $\sup E \in E$.
         In particular, if the supremum of a set, which contains only integers, exists,
         that supremum must be an integer.
-
     \item \textbf{Postulate 3} \emph{Completeness Axiom} \\
         If $E$ is a nonempty subset of $\mathbb{R}$ that is bounded above, then $E$ has a
         finite
         supremum.
-
     \item \textbf{Theorem 1.16} \emph{The Archimedean Principle} \\
         Given real numbers $a$ and $b$, with $a > 0$, there is an integer $n \in \mathbb{N}$
         such that $b < na$.
-
     \item \textbf{Theorem 1.18} \emph{Density of Rationals} \\
         If $a, b, \in \mathbb{R}$ satisfy $a < b$, then there is a $q \in \mathbb{Q}$
         such that $a < q < b$.
-
     \item \textbf{Definition 1.19} \emph{Upper bounds} \\
         Let $E \in \mathbb{R}$ be nonempty
         \begin{enumerate}
@@ -218,7 +193,6 @@
             \item $E$ is said to be \emph{bounded} if and only if it is bounded both above and
                 below.
         \end{enumerate}
-
     \item \textbf{Theorem 1.20} \emph{Reflection Principle} \\
         Let $E \in \mathbb{R}$ be nonempty
         \begin{enumerate}
@@ -231,14 +205,12 @@
                     \sup (-E) = -\inf E
                 \]
         \end{enumerate}
-
     \item \textbf{Theorem 1.21} \emph{Monotone Property} \\
         Suppose that $A \subseteq B$ are nonempty subsets of $\mathbb{R}$.
         \begin{enumerate}
             \item If $B$ has a supremum, then $\sup A \leq \sup B$.
             \item If $B$ has an infimum, then $\inf A \geq \inf B$.
         \end{enumerate}
-
 \end{itemize}
 
 \subsection{Mathematical Induction}
@@ -247,7 +219,6 @@
     \item \textbf{Theorem 1.22} \emph{Well-Ordering Principle} \\
         If $E$ is a nonempty subset of $\mathbb{N}$, then $E$ has a least element
         (i.e.\ $E$ has a finite infimum and $\inf E \in E$).
-
     \item \textbf{Theorem 1.23} \\
         Suppose for each $n \in \mathbb{N}$ that $A(n)$ is a proposition which satisfies
         the following two properties:
@@ -256,7 +227,6 @@
             \item For every $n \in \mathbb{N}$ for which $A(n)$ is true, $A(n+1)$ is also true.
         \end{enumerate}
         Then $A(n)$ is true for all $n \in \mathbb{N}$.
-
     \item \textbf{Theorem 1.26} \emph{Binomial Formula} \\
         If $a, b, \in \mathbb{R}, n \in \mathbb{N}$ and $0^0$ is interpreted to be $1$, then
         \[
@@ -266,7 +236,6 @@
             \end{pmatrix}
             a^{n-k} b^k
         \]
-
 \end{itemize}
 
 \subsection{Inverse Functions and Images}
@@ -287,7 +256,6 @@
             \item $f$ is called \emph{bijective} if and only if it is both injective
                 and surjective
         \end{enumerate}
-
     \item \textbf{Theorem 1.30} \\
         Let $X$ and $Y$ be sets and $f : X \to Y$.
         Then the following three statements are equivalent.
@@ -305,12 +273,10 @@
         \end{enumerate}
         Moreover, for each $f : X \to Y$, there is only one function $g$ that satisfies these.
         It is the inverse function $f^{-1}$.
-
     \item \textbf{Remark 1.31} \\
         Let $I$ be an interval and let $f : I \to \mathbb{R}$.
         If the derivative of $f$ is either always positive on $I$, or always negative on $I$,
         then $f$ is injective on $I$.
-
     \item \textbf{Definition 1.33} \emph{Image} \\
         Let $X$ and $Y$ be sets and $f : X \to Y$.
         The \emph{image} of a set $E \subseteq X$ under $f$ is the set
@@ -321,7 +287,6 @@
         \[
             f^{-1}(E) := \{ x \in X : f(x) = y \ \text{for some} \ y \in E \}
         \]
-
     \item \textbf{Definition 1.35} \emph{Union, Intersection} \\
         Let $\mathcal{E} = {\{ E_{\alpha} \}}_{\alpha \in A}$ be a collection of sets.
         \begin{enumerate}
@@ -383,7 +348,7 @@
 \subsection{Countable and Uncountable Sets}
 
 \begin{itemize}
-    \item \textbf{Definition 1.38} \emph{Countable & Uncountable}
+    \item \textbf{Definition 1.38} \emph{Countable \& Uncountable} \\
         Let $E$ be a set.
         \begin{enumerate}
             \item $E$ is said to be \emph{finite} if and only if either $E = \emptyset$
@@ -396,14 +361,11 @@
             \item $E$ is said to be \emph{uncountable} if and only if $E$ is neither finite nor
                 countable.
         \end{enumerate}
-
     \item \textbf{Remark 1.39} \emph{Cantor's Diagonalisation Argument} \\
         The open interval $(0, 1)$ is uncountable.
-
     \item \textbf{Lemma 1.40} \\
         A nonempty set $E$ is at most countable if and only if there is a function $g$ from
         $\mathbb{N}$ onto $E$.
-
     \item \textbf{Theorem 1.41} \\
         Suppose $A$ and $B$ are sets.
         \begin{enumerate}
@@ -412,7 +374,6 @@
             \item If $A \subseteq B$ and $A$ is uncountable, then $B$ is uncountable.
             \item $\mathbb{R}$ is uncountable.
         \end{enumerate}
-
     \item \textbf{Theorem 1.42} \\
         Let $A_1, A_2, \ldots$ be at most countable sets.
         \begin{enumerate}
@@ -425,11 +386,9 @@
                 \]
                 then $E$ is at most countable.
         \end{enumerate}
-
     \item \textbf{Remark 1.43} \\
         The sets $\mathbb{Z}$ and $\mathbb{Q}$ are countable, but the set of irrationals is
         uncountable.
-
 \end{itemize}
 
 \break{}
@@ -446,20 +405,16 @@
         \[
             n \geq N \implies |x_n - a| < \epsilon
         \]
-
     \item \textbf{Remark 2.4}
         A sequence can have at most one limit.
-
     \item \textbf{Definition 2.5} \emph{Subsequence} \\
         By a \emph{subsequence} of a sequence ${\{x_n\}}_{n \in \mathbb{N}}$,
-        we shall mean a sequence of the form ${\{x_n_k\}}_{k \in \mathbb{N}}$,
+        we shall mean a sequence of the form ${\{x_{n_k}\}}_{k \in \mathbb{N}}$,
         where each $n_k \in \mathbb{N}$ and $n_1 < n_2 < \cdots$.
-
     \item \textbf{Remark 2.6} \\
         If ${ \{x_n\} }_{n \in \mathbb{N}}$ converges to $a$ and
         ${ \{x_n_k\} }{k \in \mathbb{N}}$ is any subsequence of
         ${ \{x_n\} }_{n \in \mathbb{N}}$, then $x_n_k$ converges to $a$ as $k \to \infty$.
-
     \item \textbf{Definition 2.7} \emph{Bounded Sequences} \\
         Let $\{ x_n \}$ be a sequence of real numbers.
         \begin{enumerate}
@@ -470,7 +425,6 @@
             \item $\{ x_n \}$ is said to be \emph{bounded} if and only if it is bounded both
                 above and below.
         \end{enumerate}
-
     \item \textbf{Theorem 2.8}
         Every convergent sequence is bounded.
 \end{itemize}
@@ -490,14 +444,12 @@
             \item If $x_n \to 0$ as $n \to \infty$ and $\{y_n\}$ is bounded,
                 then $x_n y_n \to 0$ as $n \to \infty$.
         \end{enumerate}
-
     \item \textbf{Theorem 2.11} \\
         Let $E \subset \mathbb{R}$.
         If $E$ has a finite supremum (respectively, a finite infimum),
         then there is a sequence $x_n \in E$ such that $x_n \to \sup E$
         (respectively, a sequence $y_n \in E$ such that $y_n \to \inf E$)
         as $n \to \infty$.
-
     \item \textbf{Theorem 2.12} \\
         Suppose that $\{x_n\}$ and $\{y_n\}$ are real sequences and that
         $\alpha \in \mathbb{R}$.
@@ -525,9 +477,7 @@
                     \frac{\lim_{n \to \infty} x_n}{\lim_{n \to \infty} y_n}
                 \]
                 (In particular, all these limits exist.)
-
         \end{enumerate}
-
     \item \textbf{Definition 2.14} \emph{Divergence} \\
         Let $\{x_n\}$ be a sequence of real numbers.
         \begin{enumerate}
@@ -542,7 +492,6 @@
                     n \geq N \implies x_n < M
                 \]
         \end{enumerate}
-
     \item \textbf{Theorem 2.15} \\
         Suppose that $\{x_n\}$ and $\{y_n\}$ are real sequences such that $x_n \to +\infty$
         (respectively, $x_n \to -\infty$) as $n \to \infty$.
@@ -552,26 +501,21 @@
                     \lim_{n \to \infty} (x_n + y_n) = +\infty \quad
                     (\text{respectively}, \ \lim_{n \to \infty} (x_n + y_n) = -\infty)
                 \]
-
             \item If $\alpha > 0$, then
                 \[
                     \lim_{n \to \infty} (\alpha x_n) = +\infty \quad
                     (\text{respectively}, \ \lim_{n \to \infty} (\alpha x_n) = -\infty)
                 \]
-
             \item If $y_n > M_0$ for some $M_0 > 0$ and all $n \in \mathbb{N}$, then
                 \[
                     \lim_{n \to \infty} (x_n y_n) = +\infty \quad
                     (\text{respectively}, \ \lim_{n \to \infty} (x_n y_n) = -\infty)
                 \]
-
             \item If $\{y_n\}$ is bounded and $x_n \neq 0$, then
                 \[
                     \lim_{n \to \infty} \frac{y_n}{x_n} = 0
                 \]
-
         \end{enumerate}
-
     \item \textbf{Corollary 2.16} \\
         Let $\{x_n\}$, $\{y_n\}$ be real sequences and $\alpha, x, y$ be extended real numbers.
         If $x_n \to x$ and $y_n \to y$, as $n \to \infty$, then
@@ -584,7 +528,6 @@
             \lim_{n \to \infty} (x_n y_n) = xy
         \]
         provided that none of these products is of the form $0 \cdot \pm \infty$.
-
     \item \textbf{Theorem 2.17} \emph{Comparison Theorem} \\
         Suppose that $\{x_n\}$ and $\{y_n\}$ are convergent sequences.
         If there is an $N_0 \in \mathbb{N}$ such that
@@ -597,13 +540,12 @@
         \]
         In particular, if $x_n \in [a, b]$ converges to some point $c$,
         then $c$ must belong to $[a, b]$.
-
 \end{itemize}
 
 \subsection{Bolzano-Weierstrass Theorem}
 
 \begin{itemize}
-    \item \textbf{Definition 2.18} \emph{Increasing, Decreasing}
+    \item \textbf{Definition 2.18} \emph{Increasing, Decreasing} \\
         Let ${\{x_n\}}_{n \in \mathbb{N}}$ be a sequence of real numbers.
         \begin{enumerate}
             \item $\{x_n\}$ is said to be \emph{increasing}
@@ -615,34 +557,26 @@
             \item $\{x_n\}$ is said to be \emph{monotone} if and only if it is either
                 increasing or decreasing.
         \end{enumerate}
-
     \item \textbf{Theorem 2.19} \emph{Monotone Convergence Theorem} \\
-        if $\{x_n\}$ is increasing and bounded above, or if $\{x_n\}$ is decreasing and bounded
+        If $\{x_n\}$ is increasing and bounded above, or if $\{x_n\}$ is decreasing and bounded
         below, then $\{x_n\}$ converges to a finite limit.
-
     \item \textbf{Definition 2.22} \emph{Nested} \\
         A sequence of sets ${\{I_n\}}_{n \in \mathbb{N}}$ is said to be \emph{nested}
         if and only if
         \[
             I_1 \supseteq I_2 \supseteq \cdots
         \]
-
-
     \item \textbf{Theorem 2.23} \emph{Nested Interval Property} \\
         If ${\{I_n\}}_{n \in \mathbb{N}}$ is a nested sequence of nonempty closed bounded
         intervals, then $E := \bigcap_{n=1}^\infty I_n$ is nonempty.
-        Moreover, if the lengths of these intervals satisfy $|I_n \to 0$ as $n \to \infty$
+        Moreover, if the lengths of these intervals satisfy $|I_n| \to 0$ as $n \to \infty$
         then $E$ is a single point.
-
     \item \textbf{Remark 2.24}
         The Nested Interval Property might not hold if ``closed'' is omitted.
-
     \item \textbf{Remark 2.25}
         The Nested Interval Property might not hold if ``bounded'' is omitted.
-
-    \item \textbf{Theorem 2.26} \emph{Bolzano-Weierstrass Theorem} \\
+    \item \textbf{Theorem 2.26} \emph{Bolzano---Weierstrass Theorem} \\
         Every bounded sequence of real numbers has a convergent subsequence.
-
 \end{itemize}
 
 \subsection{Cauchy Sequences}
@@ -654,18 +588,14 @@
         \[
             n, m \geq N \implies |x_n - x_m| < \epsilon
         \]
-
     \item \textbf{Remark 2.28}
         If $\{x_n\}$ is convergent, then $\{x_n\}$ is Cauchy.
-
     \item \textbf{Theorem 2.29} \emph{Cauchy} \\
         Let $\{x_n\}$ be a sequence of real numbers.
         Then $\{x_n\}$ is Cauchy if and only if $\{x_n\}$ converges
         (to some point $a \in \mathbb{R}$).
-
     \item \textbf{Remark 2.31}
         A sequence that satisfies $x_{n+1} - x_n \to 0$ is not necessarily Cauchy.
-
 \end{itemize}
 
 \subsection{Limits Supremum and Infimum}
@@ -900,9 +830,7 @@
                     \lim_{x \to a} f(x) = -\infty \quad \text{or} \quad
                     f(x) \to -\infty \ \text{as} \ x \to a
                 \]
-
         \end{enumerate}
-
     \item \textbf{Theorem 3.17} \\
         Let $a$ be an extended real number, and let $I$ be a nondegenerate open interval which
         either contains $a$ or has $a$ as one of its endpoints.
@@ -925,20 +853,18 @@
                 if given $\epsilon > 0$ there is a $\delta > 0$
                 (which in general depends on $\epsilon, f$, and $a$) such that
                 \[
-                    |x-a| < delta \quad \text{and} \quad x \in E \implies
+                    |x-a| < \delta \quad \text{and} \quad x \in E \implies
                     |f(x) - f(a)| < \epsilon
                 \]
-
             \item $f$ is said to be \emph{continuous on $E$} if and only if $f$ is continuous
                 at every $x \in E$.
         \end{enumerate}
     \item \textbf{Remark 3.20} \\
         Let $I$ be an open interval which contains a point $a$ and $f : I \to \mathbb{R}$.
-        Then $f$ is continuous at $a \in \mathbb{I}$ if and only if
+        Then $f$ is continuous at $a \in I$ if and only if
         \[
             f(a) = \lim_{x \to a} f(x)
         \]
-
     \item \textbf{Theorem 3.21} \\
         Suppose that $E$ is a nonempty subset of $\mathbb{R}$, that $a \in E$, and that
         $f : E \to \mathbb{R}$.
@@ -948,14 +874,12 @@
             \item If $x_n$ converges to $a$ and $x_n \in E$, then
                 $f(x_n) \to f(a)$ as $n \to \infty$.
         \end{enumerate}
-
     \item \textbf{Theorem 3.22} \\
         Let $E$ be a nonempty subset of $\mathbb{R}$ and $f, g : E \to \mathbb{R}$.
         If $f, g$ are continuous at a point $a \in E$ (respectively continuous on the set $E$),
         then so are $f+g$, $fg$, and $\alpha f$ (for any $\alpha \in \mathbb{R}$).
         Moreover, $f/g$ is continuous at $a \in E$ when $g(a) \neq 0$
         (respectively, on $E$ when $g(x) \neq 0\ \forall x \in E$).
-
     \item \textbf{Definition 3.23} \emph{Composition} \\
         Suppose that $A$ and $B$ are subsets of \mathbb{R}, that $f : A \to \mathbb{R}$
         and $g : B \to \mathbb{R}$.
@@ -964,7 +888,6 @@
         \[
             (g \circ f) (x) := g(f(x)), \quad x \in A
         \]
-
     \item \textbf{Theorem 3.24} \\
         Suppose that $A$ and $B$ are subsets of $\mathbb{R}$, that $f : A \to \mathbb{R}$
         and $g : B \to \mathbb{R}$, and that $f(x) \in B \ \forall x \in A$.
@@ -976,19 +899,17 @@
                 \]
                 exists and belongs to $B$, and if $g$ is continuous and $L \in B$, then
                 \[
-                    (g \circ f) (x) =
+                    \lim_{x \to a; x \in I} (g \circ f) (x) =
                     g \left( \lim_{x \to a; x \in I} f(x)\right)
                 \]
             \item If $f$ is continuous at $a \in A$ and $g$ is continuous at $f(a) \in B$,
                 then $g \circ f$ is continuous at $a \in A$.
         \end{enumerate}
-
     \item \textbf{Definition 3.25} \emph{Bounded} \\
         Let $E$ be a nonempty subset of $\mathbb{R}$.
         A function $f : E \to \mathbb{R}$ is said to be \emph{bounded} on E if and only if
         there is an $M \in \mathbb{R}$ such that $|f(x)| \leq M$ for all $x \in E$, in
         which case we shall say that $f$ is \emph{dominated} by $M$ on $E$.
-
     \item \textbf{Theorem 3.26} \emph{Extreme Value Theorem} \\
         If $I$ a is closed, bounded interval and $f : I \to \mathbb{R}$ is continuous on $I$,
         then $f$ is bounded on $I$.
@@ -1000,41 +921,35 @@
         \[
             f(x_M) = M \quad \text{and} \quad f(x_m) = m
         \]
-
-
     \item \textbf{Remark 3.27}
         The Existence Value Theorem is false if either ``closed'' or ``bounded'' is dropped
         from the hypotheses.
-
     \item \textbf{Lemma 3.28} \\
         Suppose that $a < B$ and that $f : [a, b) \to \mathbb{R}$.
         If $f$ is continuous at a point $x_0 \in [a,b)$ and $f(x_0) > 0$,
         then there exist a positive number $\epsilon$ and a point
         $x_1 \in [a, b)$ such that $x_1 > x_0$ and $f(x) > \epsilon \ \forall
         x \in [x_0, x_1]$.
-
     \item \textbf{Theorem 3.29} \emph{Intermediate Value Theorem} \\
         Suppose that $a < b$ and that $f : [a, b] \to \mathbb{R}$ is continuous.
         If $y_0$ lies between $f(a)$ and $f(b)$, then there is an $x_0 \in (a, b)$
         such that $f(x_0) = y_0$.
-
     \item \textbf{Remark 3.34}
         The composition of two functions $g \circ f$ can be nowhere continuous,
         even though $f$ is discontinuous only on $\mathbb{Q}$ and $g$ is discontinuous
         at only one point.
-
 \end{itemize}
 
 \subsection{Uniform Continuity}
 
 \begin{itemize}
-
+https://github.com/catterwell/Analysis/blob/master/Notes.pdf
     \item \textbf{Definition 3.35} \emph{Uniform continuity} \\
         Let $E$ be a nonempty subset of $\mathbb{R}$ and $f : E \to \mathbb{R}$.
-        Then $\mathbb{f}$ is said to be \emph{uniformly continuous} on $E$ if and only if
+        Then $f$ is said to be \emph{uniformly continuous} on $E$ if and only if
         for every $\epsilon > 0$ there is a $\delta > 0$ such that
         \[
-            |x-a| < delta \quad \text{and} \quad x, a, \in E \implies |f(x) - f(a)| < \epsilon
+            |x-a| < \delta \quad \text{and} \quad x, a, \in E \implies |f(x) - f(a)| < \epsilon \quad \forall a \in E
         \]
 
     \item \textbf{Lemma 3.38} \\

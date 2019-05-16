@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1555639944 "Notes.tex" "Notes.pdf" "Notes" 1555639944
+["pdflatex"] 1558047683 "Notes.tex" "Notes.pdf" "Notes" 1558047683
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1550406775 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1550406775 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -96,15 +96,15 @@
   "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1550406775 7145 01b7b53bf69f5c0f63803657eb51217f ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1550406775 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1550406775 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1554662146 3106252 d5255ed7fd6ec6ea7699581e9a54cb46 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1554662128 7919195 5c3354f3783a4f74665424f0e9f169ac ""
-  "Notes.aux" 1555622300 7207 d927307d037e6750a8ab4d686f173155 ""
-  "Notes.out" 1555622300 3577 cf4ef1159172e02d67964f278d663374 ""
-  "Notes.tex" 1555639944 101425 470b717acc47568a80f7d5a0d95f1514 ""
-  "Notes.toc" 1555622300 4542 173516795f7bb8291e139dda31282b1b ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1556224818 3106252 d5255ed7fd6ec6ea7699581e9a54cb46 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1556224812 7919196 b371388b07e14e1a1e5d37107e281012 ""
+  "Notes.aux" 1558034194 7207 d927307d037e6750a8ab4d686f173155 ""
+  "Notes.out" 1558034194 3577 cf4ef1159172e02d67964f278d663374 ""
+  "Notes.tex" 1558047682 101441 f2959d3e7645a49a953095573fed8a76 ""
+  "Notes.toc" 1558034194 4542 173516795f7bb8291e139dda31282b1b ""
   (generated)
-  "Notes.out"
   "Notes.toc"
+  "Notes.log"
+  "Notes.out"
   "Notes.aux"
   "Notes.pdf"
-  "Notes.log"
