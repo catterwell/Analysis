@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1558047683 "Notes.tex" "Notes.pdf" "Notes" 1558047683
+["pdflatex"] 1558068111 "Notes.tex" "Notes.pdf" "Notes" 1558068111
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1550406775 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1550406775 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -66,7 +66,6 @@
   "/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty" 1550406775 2432 8ff93b1137020e8f21930562a874ae66 ""
   "/usr/share/texmf-dist/tex/latex/base/article.cls" 1550406775 19933 3097d1b31d3c45dc957096f554529032 ""
   "/usr/share/texmf-dist/tex/latex/base/inputenc.sty" 1550406775 5052 b64c57f4a38aae0d2745f8298fa50814 ""
-  "/usr/share/texmf-dist/tex/latex/base/omlcmr.fd" 1550406775 2473 8052e27f66be3b6e63e955171dae6bfe ""
   "/usr/share/texmf-dist/tex/latex/base/omscmr.fd" 1550406775 2472 aa08940f0a4dc6c24ae9f943b04ae0b9 ""
   "/usr/share/texmf-dist/tex/latex/base/size11.clo" 1550406775 8310 3be7fb8fac17ab8f3f822aa0c9800815 ""
   "/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty" 1550406775 5869 94335281ffcab47f341cf07ea8220e30 ""
@@ -98,10 +97,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1550406775 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1556224818 3106252 d5255ed7fd6ec6ea7699581e9a54cb46 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1556224812 7919196 b371388b07e14e1a1e5d37107e281012 ""
-  "Notes.aux" 1558034194 7207 d927307d037e6750a8ab4d686f173155 ""
-  "Notes.out" 1558034194 3577 cf4ef1159172e02d67964f278d663374 ""
-  "Notes.tex" 1558047682 101441 f2959d3e7645a49a953095573fed8a76 ""
-  "Notes.toc" 1558034194 4542 173516795f7bb8291e139dda31282b1b ""
+  "Notes.aux" 1558067326 7207 d927307d037e6750a8ab4d686f173155 ""
+  "Notes.out" 1558067326 3577 cf4ef1159172e02d67964f278d663374 ""
+  "Notes.tex" 1558068110 101287 3e7543191aab4b350ae9f85d1c5909d2 ""
+  "Notes.toc" 1558067326 4542 173516795f7bb8291e139dda31282b1b ""
   (generated)
   "Notes.toc"
   "Notes.log"

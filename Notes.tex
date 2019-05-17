@@ -943,7 +943,6 @@
 \subsection{Uniform Continuity}
 
 \begin{itemize}
-https://github.com/catterwell/Analysis/blob/master/Notes.pdf
     \item \textbf{Definition 3.35} \emph{Uniform continuity} \\
         Let $E$ be a nonempty subset of $\mathbb{R}$ and $f : E \to \mathbb{R}$.
         Then $f$ is said to be \emph{uniformly continuous} on $E$ if and only if
@@ -1210,7 +1209,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
         \end{enumerate}
 
     \item \textbf{Definition 2} \\
-        If $\phi$ is a steup function with respect to $\{x_0, x_1, \ldots, x_n\}$
+        If $\phi$ is a step function with respect to $\{x_0, x_1, \ldots, x_n\}$
         which takes the value $c_j$ on $(x_{j-1}, x_j)$, then
         \[
             \int \phi := \sum_{j=1}^n c_j (x_j - x_{j-1})
@@ -1228,7 +1227,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
 
 \begin{itemize}
     \item \textbf{Definition 3} \emph{Riemann-integrable} \\
-        Let $f : \mathbb{R} \t0 \mathbb{R}$.
+        Let $f : \mathbb{R} \to \mathbb{R}$.
         We say that $f$ is \emph{Riemann-integrable} if for every $\epsilon > 0$
         there exist step functions $\phi$ and $\psi$ such that
         \[
@@ -1298,7 +1297,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
                     \phi^*(x) = \sum_{j=1}^n M_j \chi_{I_j} + \sum_{j=0}^n \chi_{x_j}
                 \]
                 Note that $\phi_*$ and $\phi^*$ are step functions, and that
-                $\phi_* \leq f \geq \phi^*$.
+                $\phi_* \leq f \leq \phi^*$.
 
         \end{enumerate}
 
@@ -1400,14 +1399,14 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
                 \]
         \end{enumerate}
 
-    \item \textbf{Theorem 6.5} \emph{Divergence Test}
+    \item \textbf{Theorem 6.5} \emph{Divergence Test} \\
         Let ${\{a_k\}}_{k \in \mathbb{N}}$ be a sequence of real numbers.
         If $a_k$ does not converge to zero, then the series $\sum_{k=1}^\infty a_k$ diverges.
 
     \item \textbf{Theorem 6.6} \emph{Telescoping Series} \\
         If $\{a_k\}$ is a convergent real sequence, then
         \[
-            sum_{k=1}^\infty (a_k - a_{k+1}) = a_1 - \lim_{k \to \infty} a_k
+            \sum_{k=1}^\infty (a_k - a_{k+1}) = a_1 - \lim_{k \to \infty} a_k
         \]
 
     \item \textbf{Theorem 6.7} \emph{Geometric Series} \\
@@ -1428,7 +1427,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
         Then the infinite series $\sum_{k=1}^\infty a_k$ converges if and only if for every
         $\epsilon > 0$ there is an $N \in \mathbb{N}$ such that
         \[
-            m \geq n \geq N \implies \left| \sum_{k=n}^n a_k \right| < \epsilon
+            m \geq n \geq N \implies \left| \sum_{k=n}^m a_k \right| < \epsilon
         \]
 
     \item \textbf{Corollary 6.9} \\
@@ -1517,7 +1516,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
         A series $\sum_{k=1}^\infty a_k$ converges absolutely if and only if for every
         $\epsilon > 0$ there is an $N \in \mathbb{N}$ such that
         \[
-            m > n \geq N \implies \sum_{k=1}^\infty |a_k| < \epsilon
+            m > n \geq N \implies \sum_{k=n}^m |a_k| < \epsilon
         \]
 
     \item \textbf{Remark 6.20} \\
@@ -1576,9 +1575,6 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
             \sum_{k=1}^\infty a_k = \sum_{j=1}^\infty b_j
         \]
 
-    \item \textbf{Lemma 6.28}
-    \item \textbf{Theorem 6.29} \emph{Riemann}
-
 \end{itemize}
 
 \subsection{Alternating Series}
@@ -1598,11 +1594,11 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
 
     \item \textbf{Theorem 6.31} \emph{Dirichlet's Test} \\
         Let $a_k, b_k \in \mathbb{R}$ for $k \in \mathbb{N}$.
-        If the sequence of partial sums $s_n = \sum_{k=1}^n a_k$ is bounded an
-        $b_k \downarrow 0$ as $k \to \infty$, then $\sum_{k=1}^\infty a_k b_k$ converges.
+        If the sequence of partial sums $s_n = \sum_{k=1}^n a_k$ is bounded and
+        $b_k \to 0$ as $k \to \infty$, then $\sum_{k=1}^\infty a_k b_k$ converges.
 
     \item \textbf{Corollary 6.32} \emph{Alternating Series Test} \\
-        If $a_k \downarrow 0$ as $k \to \infty$, then
+        If $a_k \to 0$ as $k \to \infty$, then
         \[
             \sum_{k=1}^\infty {(-1)}^k a_k
         \]
@@ -1671,7 +1667,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
 
     \item \textbf{Theorem 7.10} \\
         Suppose that $f_n \to f$ uniformly on a closed interval $[a, b]$.
-        if each $f_n$ is integrable on $[a, b]$, then so is $f$ and
+        If each $f_n$ is integrable on $[a, b]$, then so is $f$ and
         \[
             \lim_{n \to \infty} \int_a^b f_n(x)\, \mathrm{d}x =
             \int_a^b \left( \lim_{n \to \infty} f_n(x)\right)\, \mathrm{d}x
@@ -1687,7 +1683,7 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
         \[
             n, m \geq N \implies |f_n(x) - f_m(x)| < \epsilon
         \]
-        for all $x in E$.
+        for all $x \in E$.
 
     \item \textbf{Theorem 7.12} \\
         Let $(a, b)$ be a bounded interval and suppose that $f_n$ is a sequence of funtions
@@ -1803,15 +1799,15 @@ https://github.com/catterwell/Analysis/blob/master/Notes.pdf
         Suppose that $0 < r < R$.
         Then the series converges uniformly and absolutely on $|x-c| \leq r$ to a continuous
         function $f$.
-        hence
+        Hence
         \[
             f(x) = \sum_{n=0}^\infty a_n{(x-c)}^n
         \]
-        defines a continuous function $f : (c  R, c + R) \to \mathbb{R}$.
+        defines a continuous function $f : (c - R, c + R) \to \mathbb{R}$.
 
     \item \textbf{Lemma} \\
         The two power series $\sum_{n=1}^\infty a_n {(x-c)}^n$ and
-        $\sum_{n \to \infty} n a_n {(x-c)}^{n-1}$ have the same radius of convergence.
+        $\sum_{n=1}^\infty n a_n {(x-c)}^{n-1}$ have the same radius of convergence.
 
     \item \textbf{Theorem 3} \\
         Suppose the radius of convergence of the power series is $R$.
